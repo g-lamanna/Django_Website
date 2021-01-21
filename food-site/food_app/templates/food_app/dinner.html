@@ -1,0 +1,107 @@
+{% extends "food_app/posting_base.html" %}
+{% load static %}
+{% block inner_content %}
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css"
+href="{% static 'dinner.css' %}">
+<div class="container">
+  <div class="row">
+    <div class="col page-title">
+      <h1>Dinner Recipes</h1>
+    </div>
+  </div>
+</div>
+  {% for post in posts %}
+  <div class="row">
+      <div class='container'>
+          <div class='row front-page-row'>
+              <div class='col-6 padding-0'>
+                <img class='img-fluid front-page-img' src="{{ post.image.url }}">
+              </div>
+        
+              <div class='col-6 colorme padding-0 d-flex justify-content-center'>
+        
+                <div class="container content-container">
+                  <div class="row title-row">
+                    <div class="col">
+                      {% for i in range %}
+                        <span class="fa fa-star checked"></span>
+                      {% endfor %}                 
+                      <p>{{post.title}}</p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <br>
+                  <div class="row fonta-row">
+                    <div class="col-6">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="col-6">
+                      <i class="fas fa-wine-glass"></i>
+                    </div>
+                  </div>
+
+                  <div class="row fonta-row">
+                      <div class="col-6">
+                        <h2> {{post.time}} minutes </h2>
+                      </div>
+                      <div class="col-6">
+                        <h2>Pairs well with {{post.drink}}</h2>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+              <div class="container button-container">
+                  <button class="btn btn-dark button-card" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Recipe</button>
+              </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse multi-collapse" id=".multi-collapse">
+                      <div class="card card-body">
+                          <ul>
+                              <li>{{post.ingredient_1}}</li>
+                              <li>{{post.ingredient_2}}</li>
+                              <li>{{post.ingredient_3}}</li>
+                              <li>{{post.ingredient_4}}</li>
+                              <li>{{post.ingredient_5}}</li>
+                              <li>{{post.ingredient_6}}</li>
+                              <li>{{post.ingredient_7}}</li>
+                              <li>{{post.ingredient_8}}</li>
+                              <li>{{post.ingredient_9}}</li>
+                              <li>{{post.ingredient_10}}</li>
+                            </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                      <div class="card card-body">
+                          <ol>
+                              <li>{{post.step_1}}</li>
+                              <li>{{post.step_2}}</li>
+                              <li>{{post.step_3}}</li>
+                              <li>{{post.step_4}}</li>
+                              <li>{{post.step_5}}</li>
+                              <li>{{post.step_6}}</li>
+                              <li>{{post.step_7}}</li>
+                              <li>{{post.step_8}}</li>
+                              <li>{{post.step_9}}</li>
+                              <li>{{post.step_10}}</li>
+                            </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+      </div>
+      
+  {% endfor %}
+{% endblock inner_content %}
+

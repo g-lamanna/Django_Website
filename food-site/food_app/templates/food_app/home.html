@@ -1,0 +1,118 @@
+{% extends "food_app/base.html" %}
+{% load static %}
+{% block content %}
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'home.css' %}">
+  <section class='container food-container'>
+    <div class="box box-2">
+      <div class='container billboard-icon'>
+        <i class="fab fa-hotjar"></i>
+      </div>
+      <div class='container billboard-container'>
+        <p class='food-tag-dinner'>
+          DINNER
+        </p>
+        <h1 class="billboard-header">Milanese Alfredo Chicken and Spinach</h1>
+        <a style="color:black"href='#'><small class="descriptor-link">Discover one of Northern Italy's most inconic dishes.</small></a>
+      </div>
+      <div class="container billboard-description">
+      </div>
+    </div>
+    <div class="box box-3">
+      <a><img class='img-fluid img-1' src="{% static 'images/Chicken_Spinach_Alfredo.jpg' %}"></a>
+    </div>
+    <div class= 'container food-options'>
+        <h1 class="gnoccio-recipes-header">Explore Our <i class="fas fa-arrow-right"></i> Recipes</h1>
+        <div class='container snack-col'>
+          <hr>
+          <div class="box box-9">
+              <a href='#'><img class="img-fluid dinner-img" src="{% static 'images/buff_dip.jpg' %}"></a> 
+              <div class='card-text'>
+                <h3>Snacks</h3>
+              </div>       
+          </div>
+        </div>
+        <div class='container dinner-col'>
+          <hr>
+          <div class="box box-10">
+            <a href='#'><img class="img-fluid dinner-img" src="{% static 'images/ribs.jpg' %}"></a>
+            <div class='card-text'>
+                <h3>Dinner</h3>
+              </div> 
+          </div>
+        </div>
+        <div class='container dessert-col'>
+          <div class="box box-11">
+            <hr>
+            <a href='#'><img class="img-fluid dinner-img" src="{% static 'images/red_gob.jpg' %}"></a>
+            <div class='card-text'>
+                <h3>Dessert</h3>
+              </div>   
+          </div>
+        </div>
+      </div>
+
+
+    <div class="box box-4">
+      <hr>
+      <br>
+      <h3 class="about-header">What gnoccio is all about</h3>
+    </div>
+
+
+    <div class="container site-info">
+        <div class="box box-6">
+            <i class="fab fa-delicious"></i>
+          <h4>
+            Delicious
+          </h4>
+          <p>
+            Carefully selected recipes to attract your tastebuds.
+          </p>
+        </div>
+        <div class="box box-5">
+            <i class="fas fa-globe"></i>
+          <h4 class='container info-title'>
+            Diverse
+          </h4>
+          <p>
+            Excellent recipes for any occassion.
+          </p>
+        </div>
+        <div class="box box-7">
+          <i class="fas fa-book-open"></i>
+          <h4>
+            Easy
+          </h4>
+            <p>
+              Common ingredients and simple to follow instructions.
+            </p>
+        </div>
+    </div>
+    <div class="container wine-container">
+      <div class="box box-8-1">
+        <hr>
+        <img class="img-fluid wine-toasting" src="{% static 'images/toast.jpg' %}">
+      </div>
+      <div class="box box-8-2">
+        <hr>
+        <img class="img-fluid wine-toasting" src="{% static 'images/toast-copy.jpg' %}">
+      </div>
+      <div class="box box-8-3">
+        <hr>
+        <h1 class="wine-text">Salut! Enjoy our Wine chart and learn how smell the aroma and taste the tannins.</h1>
+        <a class="wine-link" href='#'>Check out our Wine Chart here</a>
+      </div>
+    </div>
+
+  </section> 
+
+{% endblock content %}
+
+
+
+
+

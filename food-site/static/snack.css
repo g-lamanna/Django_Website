@@ -1,0 +1,91 @@
+.colorme{
+  background-color: #F4D03F;
+  }
+  
+  .padding-0{
+    padding-right:0;
+    padding-left:0;
+  }
+  
+  .front-page-img{
+    height:100%;
+    width:100%;
+  }
+  
+  .front-page-row{
+    height:500px;
+    border-style: solid;
+    margin:50px;
+  }
+  
+  .header-row{
+    text-align: center;
+  }
+  
+  .card-des{
+    font-size:14px;
+  }
+  
+  .title-row{
+    text-align: center;
+    font-family: Times;
+    font-size: 35px;
+  }
+  
+  .vl {
+    border-left: 2px solid black;
+    height: 350px;
+    position: absolute;
+    left: 45%;
+    margin-left: -3px;
+    top: 15%;
+  }
+  
+  .ingred-col{
+    text-align: left;
+  }
+  
+  .steps-col{
+    text-align: left;
+  }
+  
+  .page-title h1{
+    font-family:monospace;
+    font-size: 64px;
+  }
+  
+  .page-title{
+    position:justify;
+    text-align: center;
+  }
+  
+  .button-container{
+    text-align: center;
+  }
+  .button-card {
+    position: relative;
+    color:white;
+    top: -50px;
+  }
+  
+  .fa{
+    font-size: 30px;
+  }
+  .checked {
+    color: purple;
+  }
+  
+  .fa-clock{
+    font-size: 40px;
+  }
+  .fa-wine-glass{
+    font-size: 40px;
+  }
+  
+  .card-body{
+    background-color: #F4D03F;
+  }
+  
+  .fonta-row{
+    text-align: center;
+  }
