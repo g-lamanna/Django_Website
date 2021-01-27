@@ -1,434 +1,211 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
 
-.food-container{
+.bg-image{
+  max-width:100%;
+  
+}
+
+.jumbotron-background-img{
+  padding:0px;
+  padding-bottom:40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.banner-container{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:center;
-  align-items: center;
-  align-content: center;
-  padding:0;
-  margin:0;
-  background-color:#f2ecd8;
-  height:100%;
+  max-width: 100%;
+  padding:50px;
 }
 
-.box{
+/* Banner Containers */
+
+.img-container{
+  display:flex;
+  flex-basis: 50%;
+  padding:0px;
+}
+.banner-text-container{
+  display: flex;
+  flex-basis: 16%;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-content: center;
+  align-items: center;
+  flex-grow:4;
+  padding:20px;
+}
+
+
+#banner-header{
+  flex-grow:6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#banner-header h1{
+  font-weight:bold;
+  font-size:50px;
+}
+#banner-header button{
+  font-size:20px;
+}
+
+.btn-light{
+  background-color:rgb(102,0,0);
+  border-radius: 90%;
+  font-family:'Poppins', sans-serif;
+  color:white;
+  width:30%;
+}
+.btn-light:hover{
+  background-color:rgb(102,0,0);
+  color:white;
+}
+
+.bio-container{
+  display:flex;
+  flex-basis: 24%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.img-1{
-  max-width: 100%;
-  height:auto;
+
+
+
+
+#bio{
+  font-size:50px;
+  flex-basis:100%;
+  font-family:'Poppins', sans-serif;
+
 }
 
-.billboard-header{
-  font-weight:bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.billboard-container{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items: center;
+.centered-logo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   align-content: center;
-  padding-bottom:40px;
-}
-
-.food-tag-dinner{
-  background-color: gold;
-  padding:5px;
-  color:white;
-  font-size:12px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.billboard-icon{
-  display:flex;
-  justify-content: center;
-}
-
-.descriptor-link{
-  font-family:Arial, Helvetica, sans-serif; 
-  text-decoration: underline;
-}
-
-
-
-.fa-hotjar{
-  font-size:40px;
-  color:orangered;
-  padding:5px;
-}
-
-.fa-delicious{
-  font-size:40px;
-  color:orangered;
-  padding:5px;
-}
-
-.fa-book-open{
-  font-size:40px;
-  color:orangered;
-  padding:5px;
-}
-
-.fa-globe{
-  font-size:40px;
-  color:orangered;
-  padding:5px;
-}
-
-
-
-.billboard-description{
-  display:flex;
-  justify-content: center;
-}
-
-
-
-
-.box-2{
-  flex-basis: 50%;
-  height:83.0%;
-  background-color:#f2ecd8;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-}
-
-.about-header{
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
+  color:rgb(102,0,0);
+  letter-spacing: 12px;
+  font-size:80px;
+  padding-top:5px;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
-}
-
-.box-3{
-  flex-basis: 50%;
-  background-color: black;
-}
-.box-4{
-  flex-basis: 100%;
-  padding:20px;
-  background-color:white;;
+  transform: translateY(100%);
+  transform: translatey(50%);
 }
 
 
-.site-info{
-  display:flex;
-  align-items:flex-start;
-  margin:0;
-  padding:0;
+.site-info-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:-40px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.box-5{
-  flex-basis: 33.3%;
-  background-color: white;
+.tag-list{
+  padding:30px;
+}
+
+
+
+
+#info-tabs{
+  display: flex;
+  justify-content: space-around;
+  width:55%;
+  padding-top: 15px;
+  list-style: none;
+  font-size:40px;
+}
+
+.bio-pic{
+  border-radius:70%;
+  width:60%;
+  padding:15px;
+}
+
+.bio-container p{
   font-size:12px;
-
 }
 
-.box-6{
-  flex-basis: 33.3%;
-  background-color: white;
-  font-size:12px;
-
-  
-  
-}
-.box-7{
-  flex-basis: 33.4%;
-  background-color: white;
-  font-size:12px;
-
+.vl {
+  border-left: 2px solid black;
+  height: 500px;
 }
 
-
-
-.wine-container{
-  background-color:white;
-  display:flex;
-  flex-direction: row;
-  padding:40px;
-}
-
-
-
-.wine_toasting{
-  width: 100%;
-  height:50%;
-}
-
-.wine-link{
-  color:gray; 
-  font-family: Georgia, 'Times New Roman', Times, serif; 
-  text-decoration: underline;
-}
-
-.wine-text{
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.box-8-1{
-  background-color:white;
-  flex-basis: 100%;
-}
-.box-8-2{
-  background-color:white;
-  flex-basis: 100%;
-}
-.box-8-3{
-  background-color:white;
-  flex-basis: 100%;
-  order:-1
-}
-
-
-
-
-.food-options{
-  background-color:white;
-  display:flex;
-  flex-direction: row;
-  padding:40px; 
-}
-
-
-.box-9{
-  background-color: white;
-  flex-basis: 33.3%;
-  position: relative;
-  margin: 0px 0px 0px;
-}
-.box-10{
-  flex-basis: 33.3%;
-}
-.box-11{
-  flex-basis: 33.3%;
-}
-
-
-.snack-col{
-  position:relative;
-}
-
-.snack-img{
-  backface-visibility: hidden;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.dinner-img{
-  backface-visibility: hidden;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.dessert-img{
-  backface-visibility: hidden;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.girl-eating-img{
-  height:100%;
-  max-width: 100%;
-}
-
-.gnoccio-recipes-header{
-  font-size: 70px;
-  padding:10px;
-  font-weight: bold;
-}
-
-
-.card-text {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-weight: bold;
-  opacity: 1;
-  transition: opacity .2s, visibility .2s;
-}
-
-
-.box-9:hover .text-1{
-  opacity: 1;
-  visibility:visible;
-}
-.box-10:hover .text-2{
-  opacity: 1;
-  visibility:visible;
-}
-.box-11:hover .text-3{
-  opacity: 1;
-  visibility:visible;
-}
-.snack-img:hover{
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 1.0s ease;
-  backface-visibility: hidden;
-}
-.dinner-img:hover{
-
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 1.0s ease;
-  backface-visibility: hidden;
-}
-.dessert-img:hover{
-
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 1.0s ease;
-  backface-visibility: hidden;
-}
-
-
-
-
-/* Wine/Billboard Text */
-
-@media screen and (max-width:992px){
-  .wine-text{
-    font-size: 25px;
+@media screen and (max-width:855px){
+  .centered-logo{
+    font-size:60px;
   }
-  .billboard-header{
-    font-size: 25px;
-  }
-
-}
-@media screen and (max-width:767px){
-  .wine-text{
-    font-size: 20px;
-  }
-  .billboard-header{
-    font-size: 20px;
-  }
-}
-@media screen and (max-width:505px){
-  .wine-text{
-    font-size: 15px;
-  }
-  .billboard-header{
-    font-size: 15px;
-  }
-}
-@media screen and (max-width:403px){
-  .wine-text{
-    font-size: 12px;
-  }
-  .billboard-header{
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width:571px){
-  .wine-link{
-    font-size: 8px;
-  }
-}
-
-/* Link/hotjar/billboard tag Text */
-
-
-@media screen and (max-width:505px){
-  .descriptor-link{
-    font-size: 8px;
-  }
-  .food-tag-dinner{
-    font-size: 8px;
-    padding:3px;
-  }
-  .fa-hotjar{
-    font-size: 30px;
-    padding:3px;
-  }
-}
-@media screen and (max-width:403px){
-  .descriptor-link{
-    font-size: 5px;
-  }
-  .food-tag-dinner{
-    font-size: 5px;
-    padding:1px;
-  }
-  .fa-hotjar{
-    font-size: 20px;
-    padding:2px;
-  }
-
-}
-
-/* about-header Text */
-
-@media screen and (max-width:352px){
-  .about-header{
+  #info-tabs{
     font-size:20px;
   }
-}
-
-
-/* about GNOCCIO header */
-
-@media screen and (max-width:1200px){
-  .gnoccio-recipes-header{
-    font-size: 60px;
+  .tag-list{
+    padding:20px;
   }
 }
-@media screen and (max-width:992px){
-  .gnoccio-recipes-header{
-    font-size: 45px;
+@media screen and (max-width:693px){
+  .centered-logo{
+    font-size:40px;
   }
-}
-@media screen and (max-width:770px){
-  .gnoccio-recipes-header{
-    font-size: 35px;
+  #info-tabs{
+    font-size:10px;
   }
-}
-@media screen and (max-width:525px){
-  .gnoccio-recipes-header{
-    font-size: 25px;
-  }
-}
-@media screen and (max-width:413px){
-  .gnoccio-recipes-header{
-    font-size: 15px;
-  }
-}
-
-/*card and recipe header */
-
-@media screen and (max-width:511px){
-  .card-text h3{
-    font-size: 17px;
-  }
-  .food-options{
+  .tag-list{
     padding:10px;
   }
-  .gnoccio-recipes-header{
-    padding-top: 30px;
+}
+@media screen and (max-width:509px){
+  .centered-logo{
+    font-size:30px;
+    letter-spacing: 5px;
+  }
+  #info-tabs{
+    font-size:10px;
+  }
+  .tag-list{
+    padding:7px;
+  }
+}
+@media screen and (max-width:412px){
+  .centered-logo{
+    font-size:20px;
+    letter-spacing: 3px;
+  }
+  #info-tabs{
+    font-size:7px;
+  }
+  .tag-list{
+    padding:5px;
   }
 }
 
-/* Dinner IMG */
-@media screen and (max-width:768px){
-  .dinner-img{
-    height:130px;
-  }
-}
 
 
-/* DIVERSE CARD */
 
-@media screen and (max-width:438px){
-  .box-5{
-    padding-bottom: 18px;
-  }
-}
+
+
+
+

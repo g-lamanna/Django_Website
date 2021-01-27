@@ -1,115 +1,62 @@
 {% extends "food_app/base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
   <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <link rel="stylesheet" type="text/css"
   href="{% static 'home.css' %}">
-  <section class='container food-container'>
-    <div class="box box-2">
-      <div class='container billboard-icon'>
-        <i class="fab fa-hotjar"></i>
+  <div class='container jumbotron-background-img'> 
+    <img class='img-fluid bg-image' src="{% static 'images/spaghetti-pasta-fresh-ingredients-white-table.jpg' %}">
+    <h4 class='centered-logo'>
+      gabriel's table
+      <div class='container site-info-list'>
+          <ul id='info-tabs'>
+            <li class='tag-list'>simple</li>
+            <li class='tag-list'>fast</li>
+            <li class='tag-list'>tasty</li>
+          </ul>
+    </h4>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class='container banner-container'>
+   <div class='container img-container'>
+     <div id="banner-img">
+       <img class='img-fluid multi-cooks' src='{% static "images/multi-cooks.jpg" %}' href='#'>
+     </div>
+   </div>
+
+   <div class='container banner-text-container'>
+      <div id="banner-header">
+        <h1>Beginner Recipe</h1>
+        <p>Good and easy, enjoy our beginner recipes.</p>
+        <button class='btn btn-light' type='submit'>explore</button>
       </div>
-      <div class='container billboard-container'>
-        <p class='food-tag-dinner'>
-          DINNER
+   </div>
+   <div class='vl'></div>
+   <div class='container bio-container'>
+     <div id='bio'>
+       <h3>About Me</h3>
+       <img class='img-fluid bio-pic' src="{% static 'images/bio-pic.jpg' %}">
+       <div class='container bio-text-container'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <h1 class="billboard-header">Milanese Alfredo Chicken and Spinach</h1>
-        <a style="color:black"href='#'><small class="descriptor-link">Discover one of Northern Italy's most inconic dishes.</small></a>
-      </div>
-      <div class="container billboard-description">
-      </div>
-    </div>
-    <div class="box box-3">
-      <a><img class='img-fluid img-1' src="{% static 'images/Chicken_Spinach_Alfredo.jpg' %}"></a>
-    </div>
-    <div class= 'container food-options'>
-        <h1 class="gnoccio-recipes-header">Explore Our <i class="fas fa-arrow-right"></i> Recipes</h1>
-        <div class='container snack-col'>
-          <hr>
-          <div class="box box-9">
-              <a href='#'><img class="img-fluid dinner-img" src="{% static 'images/buff_dip.jpg' %}"></a> 
-              <div class='card-text'>
-                <h3>Snacks</h3>
-              </div>       
-          </div>
-        </div>
-        <div class='container dinner-col'>
-          <hr>
-          <div class="box box-10">
-            <a href='#'><img class="img-fluid dinner-img" src="{% static 'images/ribs.jpg' %}"></a>
-            <div class='card-text'>
-                <h3>Dinner</h3>
-              </div> 
-          </div>
-        </div>
-        <div class='container dessert-col'>
-          <div class="box box-11">
-            <hr>
-            <a href='#'><img class="img-fluid dinner-img" src="{% static 'images/red_gob.jpg' %}"></a>
-            <div class='card-text'>
-                <h3>Dessert</h3>
-              </div>   
-          </div>
-        </div>
-      </div>
-
-
-    <div class="box box-4">
-      <hr>
-      <br>
-      <h3 class="about-header">What gnoccio is all about</h3>
-    </div>
-
-
-    <div class="container site-info">
-        <div class="box box-6">
-            <i class="fab fa-delicious"></i>
-          <h4>
-            Delicious
-          </h4>
-          <p>
-            Carefully selected recipes to attract your tastebuds.
-          </p>
-        </div>
-        <div class="box box-5">
-            <i class="fas fa-globe"></i>
-          <h4 class='container info-title'>
-            Diverse
-          </h4>
-          <p>
-            Excellent recipes for any occassion.
-          </p>
-        </div>
-        <div class="box box-7">
-          <i class="fas fa-book-open"></i>
-          <h4>
-            Easy
-          </h4>
-            <p>
-              Common ingredients and simple to follow instructions.
-            </p>
-        </div>
-    </div>
-    <div class="container wine-container">
-      <div class="box box-8-1">
-        <hr>
-        <img class="img-fluid wine-toasting" src="{% static 'images/toast.jpg' %}">
-      </div>
-      <div class="box box-8-2">
-        <hr>
-        <img class="img-fluid wine-toasting" src="{% static 'images/toast-copy.jpg' %}">
-      </div>
-      <div class="box box-8-3">
-        <hr>
-        <h1 class="wine-text">Salut! Enjoy our Wine chart and learn how smell the aroma and taste the tannins.</h1>
-        <a class="wine-link" href='#'>Check out our Wine Chart here</a>
-      </div>
-    </div>
-
-  </section> 
-
+       </div>
+     </div>
+   </div>
+   
+ </div>
+ <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}
 
 
