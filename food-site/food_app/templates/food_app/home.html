@@ -2,60 +2,104 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block content %}
-  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css"
   href="{% static 'home.css' %}">
-  <div class='container jumbotron-background-img'> 
-    <img class='img-fluid bg-image' src="{% static 'images/spaghetti-pasta-fresh-ingredients-white-table.jpg' %}">
-    <h4 class='centered-logo'>
-      gabriel's table
-      <div class='container site-info-list'>
-          <ul id='info-tabs'>
-            <li class='tag-list'>simple</li>
-            <li class='tag-list'>fast</li>
-            <li class='tag-list'>tasty</li>
-          </ul>
-    </h4>
-    </div>
+  <div class='container-fluid jumbotron-background-img'> 
+      <img class='img-fluid bg-image' src="{% static 'images/ravioli-with-spinach-ricotta-cheese.jpg' %}">
+      <h4 class='centered-logo'>
+        Homemade Pizza
+      </h4>
   </div>
 
-  <hr>
 
-  <div class='container banner-container'>
-   <div class='container img-container'>
-     <div id="banner-img">
-       <img class='img-fluid multi-cooks' src='{% static "images/multi-cooks.jpg" %}' href='#'>
+ <br>
+ <br>
+
+  <h1 class='h1-recipe-text'>Check out our wide variety of recipes and wine info!</h1>
+ <div class='container wrapper'>
+
+   <a href='#'><div class='container card'>
+     <img class='img-fluid' src='{% static "images/buff_dip.jpg" %}'>
+     <div class='container info'>
+       <h1>Snacks</h1>
      </div>
    </div>
+  </a>
 
-   <div class='container banner-text-container'>
-      <div id="banner-header">
-        <h1>Beginner Recipe</h1>
-        <p>Good and easy, enjoy our beginner recipes.</p>
-        <button class='btn btn-light' type='submit'>explore</button>
-      </div>
-   </div>
-   <div class='vl'></div>
-   <div class='container bio-container'>
-     <div id='bio'>
-       <h3>About Me</h3>
-       <img class='img-fluid bio-pic' src="{% static 'images/bio-pic.jpg' %}">
-       <div class='container bio-text-container'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-       </div>
+ 
+   <a href='#'><div class='container card'>
+     <img class='img-fluid' src='{% static "images/Chicken_Spinach_Alfredo.jpg" %}'>
+     <div class='container info'>
+       <h1>Dinner</h1>
      </div>
    </div>
-   
+  </a>
+
+   <a href='#'><div class='container card'>
+     <img class='img-fluid' src='{% static "images/almonds.jpg" %}'>
+     <div class='container info'>
+       <h1>Dessert</h1>
+     </div>
+   </div>
+  </a>
+
+  <a href='#'><div class='container card'>
+     <img class='img-fluid' src='{% static "images/red-wine.jpg" %}'>
+     <div class='container info'>
+       <h1>Wine</h1>
+     </div>
+   </div>
+  </a>
+
  </div>
+
+<!-- <div class='container info-boxes'data-aos="fade-right">
+    <div class='box image-1' >
+      <a href='#'>
+        <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
+      </a>
+    </div>
+    <div class='box text-1'>
+      <h1>Perfect Wine Generator</h1>
+      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
+        to pair it with!
+      </p>
+    </div>
+</div>
+
+<div class='container info-boxes' data-aos="fade-left">
+    <div class='box text-2'>
+        <h1>FEATURE Chicken Stir-Fry</h1>
+        <p>Discover our featured recipe of the month and why we love it.
+        </p>
+      </div>
+    <div class='box image-2'>
+      <a href='#'>
+        <img class='img-fluid' src='{% static  "images/stir-fry.jpg"%}'>
+      </a>
+    </div>
+</div>
+
+<div class='container info-boxes'data-aos="fade-right">
+    <div class='box image-3' >
+      <a href='#'>
+        <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
+      </a>
+    </div>
+    <div class='box text-3'>
+      <h1>Perfect Wine Generator</h1>
+      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
+        to pair it with!
+      </p>
+    </div>
+</div> -->
+
  <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}
 

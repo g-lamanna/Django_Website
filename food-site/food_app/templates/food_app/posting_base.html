@@ -3,11 +3,13 @@
 {% block content %}
 <link rel="stylesheet" type="text/css"
 href="{% static 'posting_main.css' %}">
-<br>
-<br>
-  <main role="main" class= "container">
-      {% block inner_content %}{% endblock inner_content %}
-  </main>
+<div class='container-fluid jumbotron-background-img'> 
+    <img class='img-fluid bg-image' src="{% static 'images/ingredients-spaghetti-preparation.jpg' %}">
+    <h4 class='centered-logo'>
+      #dinner
+    </h4>
+</div>
+{% block dinner_content %}{% endblock dinner_content %}
 {% endblock content %}
 
 

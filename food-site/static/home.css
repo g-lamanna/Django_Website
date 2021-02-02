@@ -6,19 +6,27 @@
 
 .bg-image{
   max-width:100%;
-  
+  padding:0px;
 }
 
 .jumbotron-background-img{
-  padding:0px;
-  padding-bottom:40px;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+  }
+
+.inner-box-wrapper{
   display: flex;
   flex-direction: column;
-  text-align: center;
-  max-width: 100%;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  padding:0px;
+}
+
+.h1-recipe-text{
+  padding:0px;
 }
 
 .banner-container{
@@ -27,8 +35,12 @@
   flex-wrap:wrap;
   justify-content:center;
   max-width: 100%;
-  padding:50px;
+  padding-top:30px;
+  background:rgb(192,192,192);
+  color:white;
+  padding-bottom:30px;
 }
+
 
 /* Banner Containers */
 
@@ -63,19 +75,20 @@
   font-size:50px;
 }
 #banner-header button{
-  font-size:20px;
+  font-size:15px;
 }
 
 .btn-light{
   background-color:rgb(102,0,0);
-  border-radius: 90%;
   font-family:'Poppins', sans-serif;
   color:white;
-  width:30%;
+  width:35%;
+  display:flex;
+
 }
 .btn-light:hover{
-  background-color:rgb(102,0,0);
-  color:white;
+  background-color:white;
+  color:rgb(102,0,0);
 }
 
 .bio-container{
@@ -88,32 +101,59 @@
 }
 
 
-
-
-
-#bio{
+#bio h3{
   font-size:50px;
   flex-basis:100%;
   font-family:'Poppins', sans-serif;
 
 }
 
+/* Social media icons */
+
+.fa-linkedin{
+  font-size:25px;
+  color:#ffffff;
+}
+.fa-github{
+  font-size:25px;
+  color:#ffffff;
+}
+.fa-linkedin:hover{
+  font-size:25px;
+  color:#0A66C2;
+}
+.fa-github:hover{
+  font-size:25px;
+  color:black;
+}
+.social-media-icons{
+  padding:10px;
+}
+.social-media-icons a{
+  text-decoration: none;
+}
+
+.jumbotron-background-img h4{
+  background-color:rgb(102,0,0);
+}
+
 .centered-logo {
   position: absolute;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  text-align: center;
-  color:rgb(102,0,0);
+  color:#ffff;
   letter-spacing: 12px;
-  font-size:80px;
+  font-size:40px;
   padding-top:5px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  transform: translateY(100%);
-  transform: translatey(50%);
 }
+
+
+
 
 
 .site-info-list{
@@ -142,7 +182,7 @@
 
 .bio-pic{
   border-radius:70%;
-  width:60%;
+  width:70%;
   padding:15px;
 }
 
@@ -151,8 +191,8 @@
 }
 
 .vl {
-  border-left: 2px solid black;
-  height: 500px;
+  border-left: 3px solid white;
+  height: 400px;
 }
 
 @media screen and (max-width:855px){
@@ -203,8 +243,130 @@
 }
 
 
+/*CARDS*/
+
+.h1-recipe-text{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  display:flex;
+  max-width:100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.wrapper a{
+  text-decoration: none;
+}
+
+.card{
+  width:280px;
+  height:360px;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.5s ease-in-out;
+  
+}
+
+.card:hover{
+  transform:translateY(20px);
+}
+
+.card:before{
+  content:"";
+  top: 0;
+  position: absolute;
+  left:0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(102,0,0), white);
+  z-index:2;
+  transition:0.5s all;
+  opacity:0;
+
+}
+
+.card:hover:before{
+  opacity:1;
+
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top:0;
+  left:0;
+}
 
 
+
+.card .info{
+  position: relative;
+  z-index: 6;
+  color: #fff;
+  opacity:0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+}
+
+.card:hover .info{
+  opacity:1;
+  transform:translateY(60px);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+
+
+
+.info-boxes{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: row;
+  padding:0px;
+}
+.image-1{
+  font-size: 30px;
+  flex-basis: 65%;
+}
+.text-1{
+  font-size: 30px;
+  flex-basis: 35%;
+}
+
+
+.image-2{
+  font-size: 30px;
+  flex-basis: 65%;
+}
+.text-2{
+  font-size: 30px;
+  flex-basis: 35%;
+}
+.info-boxes img{
+  padding:10px;
+}
+
+.image-3{
+  font-size: 30px;
+  flex-basis: 65%;
+}
+.text-3{
+  font-size: 30px;
+  flex-basis: 35%;
+}
 
 
 

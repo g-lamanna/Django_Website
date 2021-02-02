@@ -24,15 +24,12 @@ nav{
   padding-top:5px;
   /*text-transform: uppercase;*/
 }
-.logo-image{
-  width:35%;
-}
 
 .logo-lettering{
   font-size:23px;
 }
 
-.logo-lettering a{
+.logo a {
   list-style: none;
   text-decoration: none;
   color:rgb(102,0,0);
