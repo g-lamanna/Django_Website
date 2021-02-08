@@ -1,4 +1,4 @@
-{% extends "food_app/posting_base.html" %}
+{% extends "food_app/dinner_base.html" %}
 {% load static %}
 {% block dinner_content %}
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -9,43 +9,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css"
 href="{% static 'dinner.css' %}">
-
-<!-- <div class='container banner-container'>
-    <div class='container img-container'>
-      <div id="banner-img">
-        <img class='img-fluid' src='{% static "images/Chicken_Spinach_Alfredo.jpg" %}' href='#'>
-      </div>
-    </div>
-
-    <div class='container banner-text-container'>
-        <div id="banner-header">
-          <h6>easy</h6>
-          <h1>Beginner Recipe</h1>
-          <div class='container info-container'>
-            <h5>Cook Time:</h5>
-            <h5>Prep Time:</h5>
-          </div>
-          <div class='container recipe-info'>
-            <div class='container instructions'>
-              <h3>Instructions</h3>
-              <p>
-                rte
-                rer
-                rer
-              </p>
-            </div>
-            <div class='contaner ingredients'>
-              <h3>Ingredients</h3>
-              <p>
-                  rte
-                  rer
-                  rer
-                </p>
-            </div>
-          </div>
-        </div>
-    </div>
-</div> -->
 {% for post in posts %}
 
 <div class='container main-grid'>
@@ -67,8 +30,12 @@ href="{% static 'dinner.css' %}">
           <i class="far fa-bell"></i>
         </div>
         <div class='container info-container'>
-            <h5>Prep Time: {{ post.prep_time_lower }} - {{ post.prep_time_upper }} min</h5>
-            <h5>Cook Time: {{ post.cook_time_lower }} - {{ post.cook_time_upper }} min </h5>
+            <h4>Prep Time</h4>
+            <h4>Cook Time </h4>
+        </div>
+        <div class='container info-container'>
+            <h5>{{ post.prep_time_lower }} min - {{ post.prep_time_upper }} min</h5>
+            <h5>{{ post.cook_time_lower }} min - {{ post.cook_time_upper }} min </h5>
         </div>
       </div>
   </div>

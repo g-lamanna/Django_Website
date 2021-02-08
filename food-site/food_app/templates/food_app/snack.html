@@ -1,107 +1,85 @@
-{% extends "food_app/posting_base.html" %}
+{% extends "food_app/snack_base.html" %}
 {% load static %}
-{% block inner_content %}
+{% block snack_content %}
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css"
 href="{% static 'snack.css' %}">
-<div class="container">
-  <div class="row">
-    <div class="col page-title">
-      <h1>Snack Recipes</h1>
-    </div>
+{% for post in posts %}
+
+<div class='container main-grid'>
+  <div class='grid-1'>
+      <img class='img-fluid' src='{{ post.image.url }}'>
+  </div>
+  <div class='container grid-2'>
+      <div id="banner-header">
+        {% if post.difficulty == 'easy' %}
+          <h6>{{ post.difficulty }}</h6>
+        {% elif post.difficulty == 'medium' %}
+          <h6 style='background-color: yellow; color:black;width:70px;'>{{ post.difficulty }}</h6>
+        {% elif post.difficulty == 'hard' %}
+          <h6 style='background-color: rgb(102,0,0); color:white;'>{{ post.difficulty }}</h6>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <div class='container info-container'>
+          <i class="far fa-hourglass"></i>
+          <i class="far fa-bell"></i>
+        </div>
+        <div class='container info-container'>
+            <h4>Prep Time</h4>
+            <h4>Cook Time </h4>
+        </div>
+        <div class='container info-container'>
+            <h5>{{ post.prep_time_lower }} min - {{ post.prep_time_upper }} min</h5>
+            <h5>{{ post.cook_time_lower }} min - {{ post.cook_time_upper }} min </h5>
+        </div>
+      </div>
+  </div>
+  <div class='container grid-5'>
+      <div class='container recipe-info'>
+          <div class='container instructions'>
+            <h3>Instructions</h3>
+            <ol class='container recipe-list'>
+              {% if post.instructions_1 != '.' %}
+                <li>{{ post.instructions_1 }}</li>
+              {% endif %}
+              {% if post.instructions_2 != '.' %}
+                <li>{{ post.instructions_2 }}</li>
+              {% endif %}
+              {% if post.instructions_3 != '.' %}
+                <li>{{ post.instructions_3 }}</li>
+              {% endif %}
+              {% if post.instructions_4 != '.' %}
+                <li>{{ post.instructions_4 }}</li>
+              {% endif %}
+            </ol>         
+          </div>
+
+          <div class='contaner ingredients'>
+            <h3>Ingredients</h3>
+            <ul class='container recipe-list'>
+              {% if post.ingredients_1 != '.' %}
+                <li>{{ post.ingredients_1 }}</li>
+              {% endif %}
+              {% if post.ingredients_2 != '.' %}
+                <li>{{ post.ingredients_2 }}</li>
+              {% endif %}
+              {% if post.ingredients_3 != '.' %}
+                <li>{{ post.ingredients_3 }}</li>
+              {% endif %}
+              {% if post.ingredients_4 != '.' %}
+                <li>{{ post.ingredients_4 }}</li>
+              {% endif %}
+            </ul>
+          </div>
+        </div>
   </div>
 </div>
-  {% for post in posts %}
-  <div class="row">
-      <div class='container'>
-          <div class='row front-page-row'>
-              <div class='col-6 padding-0'>
-                <img class='img-fluid front-page-img' src="{{ post.image.url }}">
-              </div>
-        
-              <div class='col-6 colorme padding-0 d-flex justify-content-center'>
-        
-                <div class="container content-container">
-                  <div class="row title-row">
-                    <div class="col">
-                      {% for i in range %}
-                        <span class="fa fa-star checked"></span>
-                      {% endfor %}                 
-                      <p>{{post.title}}</p>
-                    </div>
-                  </div>
 
-                  <br>
-                  <br>
-                  <div class="row fonta-row">
-                    <div class="col-6">
-                      <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="col-6">
-                      <i class="fas fa-wine-glass"></i>
-                    </div>
-                  </div>
-
-                  <div class="row fonta-row">
-                      <div class="col-6">
-                        <h2> {{post.time}} minutes </h2>
-                      </div>
-                      <div class="col-6">
-                        <h2>Pairs well with {{post.drink}}</h2>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            
-              <div class="container button-container">
-                  <button class="btn btn-dark button-card" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Recipe</button>
-              </div>
-                <div class="row">
-                  <div class="col">
-                    <div class="collapse multi-collapse" id=".multi-collapse">
-                      <div class="card card-body">
-                          <ul>
-                              <li>{{post.ingredient_1}}</li>
-                              <li>{{post.ingredient_2}}</li>
-                              <li>{{post.ingredient_3}}</li>
-                              <li>{{post.ingredient_4}}</li>
-                              <li>{{post.ingredient_5}}</li>
-                              <li>{{post.ingredient_6}}</li>
-                              <li>{{post.ingredient_7}}</li>
-                              <li>{{post.ingredient_8}}</li>
-                              <li>{{post.ingredient_9}}</li>
-                              <li>{{post.ingredient_10}}</li>
-                            </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample2">
-                      <div class="card card-body">
-                          <ol>
-                              <li>{{post.step_1}}</li>
-                              <li>{{post.step_2}}</li>
-                              <li>{{post.step_3}}</li>
-                              <li>{{post.step_4}}</li>
-                              <li>{{post.step_5}}</li>
-                              <li>{{post.step_6}}</li>
-                              <li>{{post.step_7}}</li>
-                              <li>{{post.step_8}}</li>
-                              <li>{{post.step_9}}</li>
-                              <li>{{post.step_10}}</li>
-                            </ol>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-            </div>
-            <br>
-            <br>
-      </div>
-      
-  {% endfor %}
-{% endblock inner_content %}
+{% endfor %}
+{% endblock snack_content %}
 

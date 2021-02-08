@@ -1,0 +1,13 @@
+{% extends 'food_app/base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" type="text/css"
+href="{% static 'snack_base.css' %}">
+<div class='container-fluid jumbotron-background-img'> 
+    <img class='img-fluid bg-image' src="{% static 'images/classic-italian-bruschetta-served-dark-board.jpg' %}">
+    <h4 class='centered-logo'>
+      #snack
+    </h4>
+</div>
+{% block snack_content %}{% endblock snack_content %}
+{% endblock content %}

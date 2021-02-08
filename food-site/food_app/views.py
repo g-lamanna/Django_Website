@@ -21,3 +21,12 @@ def dessert(request):
     'posts': Dessert_Post.objects.all(),
   }
   return render(request,'food_app/dessert.html', context)
+  
+def about(request):
+  return render(request,'food_app/about.html')
+
+def wine(request):
+  # context = {
+  #   'posts': Wine_Post.objects.all(),
+  # }
+  return render(request,'food_app/wine.html')

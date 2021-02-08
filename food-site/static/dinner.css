@@ -98,9 +98,18 @@
 .info-container h5{
   display: flex;
   flex-direction: row;
+  color:rgb(16, 253, 8);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.info-container h4{
+  display: flex;
+  flex-direction: row;
   color:black;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  font-size:25px;
 }
 #banner-header h6{
   text-align: center;

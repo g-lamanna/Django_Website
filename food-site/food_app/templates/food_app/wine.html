@@ -1,0 +1,36 @@
+{% extends "food_app/base.html" %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'wine.css' %}">
+
+  {% for post in posts %}
+  <div class='container info-boxes'data-aos="fade-right">
+      <div class='box image-3' >
+        <a href='#'>
+          <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
+        </a>
+      </div>
+      <div class='box text-3'>
+        <h1>Perfect Wine Generator</h1>
+        <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
+          to pair it with!
+        </p>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+  {% endfor %}
+  {% endblock content %}
