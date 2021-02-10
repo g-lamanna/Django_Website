@@ -8,6 +8,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="stylesheet" type="text/css"
   href="{% static 'home.css' %}">
 
@@ -24,116 +27,52 @@
 
  <br>
  <br>
-<div class='container featured'><h6>#Featured</h6></div>
- <div class='container info-boxes'data-aos="fade-right">
-    <div class='box image-1' >
-      <a href='#'>
-        <img class='img-fluid wine-image' src='{% static  "images/full-bottle.jpg"%}'>
-      </a>
-    </div>
-    <div class='box text-1'>
-      <h1>Perfect Wine Generator</h1>
-      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-        to pair it with!
-      </p>
-    </div>
-</div>
-<div class='container info-boxes' data-aos="fade-left">
-    <div class='box text-2'>
-        <h1>Chicken Stir-Fry</h1>
-        <p>Discover our featured recipe of the month and why we love it.
-        </p>
+
+ <section>
+   <div class='container tile-container'>
+    <div class='tile is-ancestor'>
+
+      <div class='tile is-5 is-parent'>
+        <div class='tile is-child box large-right-tile'>
+          <h1>Wine Generator</h1>
+          <p>Let us suggest to you the right wine for the right occasion</p>
+        </div>
       </div>
-    <div class='box image-2'>
-      <a href='#'>
-        <img class='img-fluid' src='{% static  "images/stir-fry.jpg"%}'>
-      </a>
+
+    <div class='tile is-7'>
+      <div class='tile is-parent is-vertical'>
+        <div class='tile is-child box top-middle-tile'>
+          <h3>How to make the best dough</h3>
+        </div>
+        <div class='tile is-child box bottom-middle-tile'>
+          <h3>Discover our classic Guac recipe</h3>
+        </div>
     </div>
-</div>
-<div class='container info-boxes'data-aos="fade-right">
-    <div class='box image-3' >
-      <a href='#'>
-        <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
-      </a>
+
+    <div class='tile is-parent is-vertical '>
+      <div class='tile is-child box snack-tile'>
+        <h3>Snacks</h3>
+      </div>
+      <div class='tile is-child box dinner-tile'>
+        <h3>Dinner</h3>
+      </div>
+      <div class='tile is-child box dessert-tile'>
+        <h3>Dessert</h3>
+      </div>
+      <div class='tile is-child box wine-tile'>
+        <h3>Wine</h3>
+      </div>
     </div>
-    <div class='box text-3'>
-      <h1>Perfect Wine Generator</h1>
-      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-        to pair it with!
-      </p>
+
+
+    </div> 
     </div>
-</div>
+   </div>
+ </section>
 
 
 
-<div class='container mid-banner-container'>
-  <div class='container mid-banner-image'>
-    <img class='img-fluid' src="{% static 'images/kebab.jpeg' %}" href='#'>
-  </div>
-  <div class='container mid-banner-text'>
-    <h3>Caribbean Kebabs</h3>
-    <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-        to pair it with!</p>
-    <a href='#'><small>check it out</small></a>
-  </div>
-</div>
-
-
-<div class='container popular-articles'>
-  <div class='container left-grid'>
-    <h1 class='popular-heading'>#Most Popular</h1>
-    <div class='container popular-grid'>
-      <div class='container lefty ' style='padding:34px;'>
-        01
-      </div>
-      <div class='container righty'>
-        <a href='#'><h4>What is The Right Kind of Wine For You?  Check Out Our Personal Wine Generator</h4></a>
-      </div>
-    </div>
-    <div class='container popular-grid'>
-      <div class='container lefty'>
-        02
-      </div>
-      <div class='container righty'>
-        <a href='#'><h4>How to Make a Great Three Course Meal.</h4></a>
-      </div>
-    </div>
-    <div class='container popular-grid'>
-      <div class='container lefty'>
-        03
-      </div>
-      <div class='container righty'>
-        <a href='#'><h4>Why Making Wine From Grapes Makes Your Homemade Wine Taste 1000% Better.</h4></a>
-      </div>
-    </div>
-    <div class='container popular-grid'>
-      <div class='container lefty'>
-        04
-      </div>
-      <div class='container righty'>
-        <a href='#'><h4>How to Make Dough the Right Way</h4></a>
-      </div>
-    </div>
-    <div class='container popular-grid'>
-      <div class='container lefty'>
-        05
-      </div>
-      <div class='container righty'>
-        <a href='#'><h4>How to Cook the Best Meatballs</h4></a>
-      </div>
-    </div>
-  </div>
-  <div class='container right-grid'>
-    <img class='img-fluid large-popular-image' src="{% static 'images/glasses-red-white-wine.jpg' %}" href="#">
-  </div>
-</div>
-
-
-
-
-<br>
-<br>
- <div class='container lat-head'><h1 class='latest-heading'>#Classics</h1></div>
+<div class='container lat-head'><h1 class='latest-heading'>#Classics</h1></div>
 
  <div class='container article-grid'>
    <div class='container grid-image-left'>
@@ -234,6 +173,123 @@
     </div>
   </div>
 
+
+
+
+<!-- <div class='container featured'><h6>#Featured</h6></div>
+ <div class='container info-boxes'data-aos="fade-right">
+    <div class='box image-1' >
+      <a href='#'>
+        <img class='img-fluid wine-image' src='{% static  "images/full-bottle.jpg"%}'>
+      </a>
+    </div>
+    <div class='box text-1'>
+      <h1>Perfect Wine Generator</h1>
+      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
+        to pair it with!
+      </p>
+    </div>
+</div>
+<div class='container info-boxes' data-aos="fade-left">
+    <div class='box text-2'>
+      <h1>Perfect Wine Generator</h1>
+      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
+        to pair it with!
+      </p>
+      </div>
+    <div class='box image-3'>
+      <a href='#'>
+        <img class='img-fluid'  src='{% static  "images/stir-fry.jpg"%}'>
+      </a>
+    </div>
+</div>
+<div class='container info-boxes'data-aos="fade-right">
+    <div class='box image-3' >
+      <a href='#'>
+        <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
+      </a>
+    </div>
+    <div class='box text-3'>
+      <h1>Perfect Wine Generator</h1>
+      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
+        to pair it with!
+      </p>
+    </div>
+</div> -->
+
+
+<div class='container-fluid parent-banner-container'>
+  <div class='container-fluid mid-banner-container'>
+    <div class='container mid-banner-image'>
+      <img class='img-fluid mid-section-big-board-image' src="{% static 'images/kebab.jpeg' %}" href='#'>
+    </div>
+    <div class='container mid-banner-text'>
+      <h3>Caribbean Kebabs!</h3>
+      <p>A Caribbean-inspired marinade for these steak-veggie kebabs is flavored with soy sauce, plenty of spices 
+        and and spiked with rum to get you hopping!</p>
+      <a href='#'><small>check it out</small></a>
+    </div>
+  </div>
+</div>
+
+<div class='container popular-articles'>
+  <div class='container left-grid'>
+    <h1 class='popular-heading'>#Most Popular</h1>
+    <div class='container popular-grid'>
+      <div class='container lefty'>
+        01
+      </div>
+      <div class='container righty'>
+        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+      </div>
+    </div>
+    <div class='container popular-grid'>
+      <div class='container lefty'>
+        02
+      </div>
+      <div class='container righty'>
+        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+      </div>
+    </div>
+    <div class='container popular-grid'>
+      <div class='container lefty'>
+        03
+      </div>
+      <div class='container righty'>
+        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+      </div>
+    </div>
+    <div class='container popular-grid'>
+      <div class='container lefty'>
+        04
+      </div>
+      <div class='container righty'>
+        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+      </div>
+    </div>
+    <div class='container popular-grid'>
+      <div class='container lefty'>
+        05
+      </div>
+      <div class='container righty'>
+        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+      </div>
+    </div>
+    
+
+  </div>
+  <div class='container right-grid'>
+    <img class='img-fluid large-popular-image' src="{% static 'images/burger.jpg' %}" href="#">
+  </div>
+</div>
+
+
+
+
+<br>
+<br>
+<!-- 
+
 <br>
 <br>
 
@@ -273,7 +329,7 @@
    </div>
   </a>
 
- </div>
+ </div> -->
 
  <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}

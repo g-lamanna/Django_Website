@@ -48,7 +48,7 @@ nav{
 }
 
 .nav-links a{
-  color:rgb(102,0,0);
+  color:rgb(194, 98, 19);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight:bold;
@@ -72,12 +72,12 @@ nav{
 /*  FOOTER   */
 .site-footer
 {
-  background-color:white;;
+  background-color:rgb(5,0,0);
   padding:25px;
   padding-top: 100px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#ffff;
   width:100%;
   bottom:0;
   max-width: 100%;
@@ -86,7 +86,7 @@ nav{
 
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:#ffff;
   opacity:0.5
 }
 .site-footer hr.small
@@ -95,7 +95,7 @@ nav{
 }
 .site-footer h6
 {
-  color:black;
+  color:#ffff;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
@@ -103,7 +103,7 @@ nav{
 }
 .site-footer a
 {
-  color:#737373;
+  color:#ffff;
 }
 
 .footer-links
