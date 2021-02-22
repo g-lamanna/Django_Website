@@ -11,14 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+  integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+  integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css"
   href="{% static 'home.css' %}">
 
-  <div class='container jumbotron-background-img'> 
-      <img class='img-fluid bg-image' src="{% static 'images/close-up-person-pressing-pasta-dough-with-fork-chopping-board.jpg' %}">
+  <div class='container jumbotron_background_img'> 
+      <img class='img-fluid bg-image' src="{% static 'images/lamanna_homemade_copy.jpg' %}">
       <div class='container front-banner-text'>
         <h4 class='centered-logo'>
-            Homemade Cavatelli
+            Homemade Gnocchi
         </h4>
         <h6>Learn how to make pasta like your grandmother</h6>
       </div>
@@ -49,18 +55,18 @@
         </div>
     </div>
 
-    <div class='tile is-parent is-vertical '>
-      <div class='tile is-child box snack-tile'>
-        <h3>Snacks</h3>
+    <div class='tile is-parent is-vertical'>
+       <div class='tile is-child box snack-tile'>
+          <a href="{% url 'site-snack' %}"><h3>Snacks</h3></a>
       </div>
-      <div class='tile is-child box dinner-tile'>
-        <h3>Dinner</h3>
+        <div class='tile is-child box dinner-tile'>
+          <a href="{% url 'site-dinner' %}"><h3>Dinner</h3></a>
       </div>
       <div class='tile is-child box dessert-tile'>
-        <h3>Dessert</h3>
+        <a href="{% url 'site-dessert' %}"><h3>Dessert</h3></a>
       </div>
       <div class='tile is-child box wine-tile'>
-        <h3>Wine</h3>
+        <a href="{% url 'site-wine' %}"><h3>Wine</h3></a>
       </div>
     </div>
 
@@ -72,13 +78,24 @@
 
 
 
-<div class='container lat-head'><h1 class='latest-heading'>#Classics</h1></div>
+
+<div class='container food-style-columns'>
+  <div class='container left-column'>
+      <h1 class='type-heading'>#snack</h1>
+  </div>
+  <div class='container center-column'>
+      <h1 class='type-heading'>#dinner</h1>
+  </div>
+  <div class='container right-column'>
+      <h1 class='type-heading'>#dessert</h1>
+  </div>
+</div>
+
+
 
  <div class='container article-grid'>
    <div class='container grid-image-left'>
      <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-   </div>
-   <div class='container grid-title-left'>
      <h3>Classic French Onion Soup</h3>
      <small>
         Delve into the french country side with this classic soup.
@@ -86,65 +103,57 @@
      </small>
    </div>
    <div class='container grid-image-center'>
-     <img class='img-fluid article-grid-image1' src="{% static 'images/Chicken_Spinach_Alfredo.jpg' %}" href="#">
-   </div>
-   <div class='container grid-title-center'>
-     <h3>Milanese Alfredo Chicken and Spinach</h3>
+     <a href="{% url 'site-dinner' %}#chicken"><img class='img-fluid article-grid-image1' src="{% static 'images/Chicken_Spinach_Alfredo_copy.jpg' %}" href="#"></a>
+     <h3>Alfredo Chicken and Spinach</h3>
      <small>
         Delve into the french country side with this classic soup.
         Delve into the french country side with this classic soup.
      </small>
-   </div>
+    </div>
    <div class='container grid-image-right'>
      <img class='img-fluid article-grid-image1' src="{% static 'images/pizza.jpg' %}" href="#">
-   </div>
-   <div class='container grid-title-right'>
      <h3>Homemade Neopolitan Pizza</h3>
      <small>
         Delve into the french country side with this classic soup.
         Delve into the french country side with this classic soup.
      </small>
    </div>
+
  </div>
 
  <div class='container article-grid'>
     <div class='container grid-image-left'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/ribs.jpg' %}" href="#">
-    </div>
-    <div class='container grid-title-left'>
+      <img class='img-fluid article-grid-image1' src="{% static 'images/ribs_copy.jpg' %}" href="#">
       <h3>Nashville Style Ribs</h3>
       <small>
          Delve into the french country side with this classic soup.
          Delve into the french country side with this classic soup.
       </small>
     </div>
+
     <div class='container grid-image-center'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/pulled_pork.jpg' %}" href="#">
-    </div>
-    <div class='container grid-title-center'>
       <h3>Louisiana Pulled Pork</h3>
       <small>
          Delve into the french country side with this classic soup.
          Delve into the french country side with this classic soup.
       </small>
     </div>
+
     <div class='container grid-image-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/christmas_cookies.jpg' %}" href="#">
-    </div>
-    <div class='container grid-title-right'>
       <h3>Traditional Holiday Cookies</h3>
       <small>
          Delve into the french country side with this classic soup.
          Delve into the french country side with this classic soup.
       </small>
     </div>
+
   </div>
 
  <div class='container article-grid'>
     <div class='container grid-image-left'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-    </div>
-    <div class='container grid-title-left'>
       <h3>French Onion Soup</h3>
       <small>
          Delve into the french country side with this classic soup.
@@ -153,24 +162,26 @@
     </div>
     <div class='container grid-image-center'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-    </div>
-    <div class='container grid-title-center'>
       <h3>French Onion Soup</h3>
       <small>
          Delve into the french country side with this classic soup.
          Delve into the french country side with this classic soup.
       </small>
     </div>
+
     <div class='container grid-image-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-    </div>
-    <div class='container grid-title-right'>
       <h3>French Onion Soup</h3>
       <small>
          Delve into the french country side with this classic soup.
          Delve into the french country side with this classic soup.
       </small>
     </div>
+
+  </div>
+
+  <div class='slider'>
+
   </div>
 
 
@@ -288,48 +299,7 @@
 
 <br>
 <br>
-<!-- 
 
-<br>
-<br>
-
- <h1 class='h1-recipe-text'>Check out our wide variety of recipes and wine info!</h1>
- <div class='container wrapper'>
-
-   <a href="{% url 'site-snack' %}"><div class='container card'>
-     <img class='img-fluid' src='{% static "images/buff_dip.jpg" %}'>
-     <div class='container info'>
-       <h1>Snacks</h1>
-     </div>
-   </div>
-  </a>
-
- 
-   <a href="{% url 'site-dinner' %}#pulled_pork"><div class='container card'>
-     <img class='img-fluid' src='{% static "images/Chicken_Spinach_Alfredo.jpg" %}'>
-     <div class='container info'>
-       <h1>Dinner</h1>
-     </div>
-   </div>
-  </a>
-
-   <a href="{% url 'site-dessert' %}"><div class='container card'>
-     <img class='img-fluid' src='{% static "images/almonds.jpg" %}'>
-     <div class='container info'>
-       <h1>Dessert</h1>
-     </div>
-   </div>
-  </a>
-
-  <a href="{% url 'site-wine' %}"><div class='container card'>
-     <img class='img-fluid' src='{% static "images/red-wine.jpg" %}'>
-     <div class='container info'>
-       <h1>Wine</h1>
-     </div>
-   </div>
-  </a>
-
- </div> -->
 
  <script src="{% static 'js/home.js' %}"></script>
 {% endblock content %}

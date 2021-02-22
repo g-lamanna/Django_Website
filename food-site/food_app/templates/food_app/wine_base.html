@@ -1,0 +1,61 @@
+{% extends "food_app/base.html" %}
+{% load static %}
+{% block content %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+  integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+  integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+  crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+  href="{% static 'wine.css' %}">
+
+
+
+  <div class='container-fluid jumbotron-background-img'> 
+      <img class='img-fluid bg-image' src="{% static 'images/wine_page/wine-header.jpg' %}">
+      <h4 class='centered-logo'>
+        #wine
+      </h4>
+  </div>
+  
+<section>
+  <div class='container wine-grid-container'>
+      <div class="tile is-ancestor">
+          <div class="tile is-6 is-vertical is-parent">
+            <div class="tile is-child box top-left-tile">
+              <h2 class="title">Wine Generator</h2>
+            </div>
+            <div class="tile is-child box bottom-left-tile">
+              <h2 class="title">Making Homemade Wine</h2>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child box large-tile">
+              <h2 class="container title wine_catalog">Wine Catalog</h2>
+              <p >Enjoy our wine dictionary where you will learn about a wine's grape origin, flavors,
+                and other wine factororiams </p>
+              
+            </div>
+          </div>
+        </div>
+
+  </div>
+  </section>
+    {% block wine_content %}{% endblock wine_content %}
+
+
+
+
+
+    <script src="{% static 'js/wine.js' %}"></script>
+{% endblock content %}

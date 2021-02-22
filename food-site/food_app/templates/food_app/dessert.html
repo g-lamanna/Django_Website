@@ -1,6 +1,10 @@
 {% extends "food_app/dessert_base.html" %}
 {% load static %}
 {% block dessert_content %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 <link rel="stylesheet"
 href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,72 +14,150 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 <link rel="stylesheet" type="text/css"
 href="{% static 'dessert.css' %}">
 {% for post in posts %}
-
-<div class='container main-grid'>
-  <div class='grid-1'>
-      <img class='img-fluid' src='{{ post.image.url }}'>
-  </div>
-  <div class='container grid-2'>
-      <div id="banner-header">
-        {% if post.difficulty == 'easy' %}
-          <h6>{{ post.difficulty }}</h6>
-        {% elif post.difficulty == 'medium' %}
-          <h6 style='background-color: yellow; color:black;width:70px;'>{{ post.difficulty }}</h6>
-        {% elif post.difficulty == 'hard' %}
-          <h6 style='background-color: rgb(102,0,0); color:white;'>{{ post.difficulty }}</h6>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <div class='container info-container'>
-          <i class="far fa-hourglass"></i>
-          <i class="far fa-bell"></i>
+<div id={{post.recipe_id}} >
+    <div class="container wrapper">
+        <div  class="container card">
+            <input type="checkbox" id={{post.button_id}} class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front" style='background-image: url("{{post.image.url}}");'>
+                    <div class="inner">
+                        <h2>{{post.title}}</h2>
+                        <div class="rating">
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                            <i class="fa fa-star checked"></i>
+                        </div>
+                        <label for={{post.button_id}} class="button" aria-hidden="true">
+                            Details
+                        </label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="container inner">
+                          <div class='container grid-1'>
+                            <div class='container recipe-info'>
+    
+                                <div class='container info-container'style='font-size:10px;text-align: left; color:font-weight:bold;'>
+                                    <h4>{{post.title}}</h4>
+                                </div>
+    
+                                <div class='container info-container' style='text-align: left; color:gold; font-size: 20px;'>
+                                    <div class="rating">
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                        <i class="fa fa-star checked"></i>
+                                    </div>
+                                </div>
+                                <div class='container info-container'>
+                                    <h4>Serving: {{post.serving}} </h4>
+                                </div>
+                                <div class='container info-container'>
+                                  <h4>Prep Time:</h4>
+                                  <h5>{{ post.prep_time_lower }} min - {{ post.prep_time_upper }} min</h5>
+                                </div>
+                                <div class='container info-container'>
+                                    <h4>Cook Time: </h4>
+                                    <h5>{{ post.cook_time_lower }} min - {{ post.cook_time_upper }} min </h5>
+                                </div>
+                                <div class='container info-container'style='text-align: left;'>
+                                    <h4>Air Fryer Required: {{post.fryer}} </h4>
+                                </div>
+                            </div>
+                          </div>
+    
+                          <div class='container grid-2'>
+                              
+                              <div class='container ingredients'>
+                                  <h3>Ingredients</h3>
+                              <ul class='container recipe-list'>
+                                {% if post.ingredients_1 != '.' %}
+                                  <li>{{ post.ingredients_1 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_2 != '.' %}
+                                  <li>{{ post.ingredients_2 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_3 != '.' %}
+                                  <li>{{ post.ingredients_3 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_4 != '.' %}
+                                  <li>{{ post.ingredients_4 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_5 != '.' %}
+                                  <li>{{ post.ingredients_1 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_6 != '.' %}
+                                  <li>{{ post.ingredients_2 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_7 != '.' %}
+                                  <li>{{ post.ingredients_3 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_8 != '.' %}
+                                  <li>{{ post.ingredients_4 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_9 != '.' %}
+                                  <li>{{ post.ingredients_3 }}</li>
+                                {% endif %}
+                                {% if post.ingredients_10 != '.' %}
+                                  <li>{{ post.ingredients_4 }}</li>
+                                {% endif %}
+                              </ul>
+                            </div>
+                            <label for={{post.button_id}} class="button return" aria-hidden="true">
+                                <i class="fas fa-arrow-left"></i>
+                            </label>
+                          </div>
+                          <div class='container grid-3'>
+                              <div class='container instructions'>
+                                  <h3>Instructions</h3>
+                                  <ol class='container recipe-list'>
+                                    {% if post.instructions_1 != '.' %}
+                                      <li>{{ post.instructions_1 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_2 != '.' %}
+                                      <li>{{ post.instructions_2 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_3 != '.' %}
+                                      <li>{{ post.instructions_3 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_4 != '.' %}
+                                      <li>{{ post.instructions_4 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_5 != '.' %}
+                                      <li>{{ post.instructions_1 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_6 != '.' %}
+                                      <li>{{ post.instructions_2 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_7 != '.' %}
+                                      <li>{{ post.instructions_3 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_8 != '.' %}
+                                      <li>{{ post.instructions_4 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_9 != '.' %}
+                                      <li>{{ post.instructions_3 }}</li>
+                                    {% endif %}
+                                    {% if post.instructions_10 != '.' %}
+                                      <li>{{ post.instructions_4 }}</li>
+                                    {% endif %}
+                                  </ol>         
+                                </div>
+                          </div>
+    
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <div class='container info-container'>
-            <h5>Prep Time: {{ post.prep_time_lower }} min - {{ post.prep_time_upper }} min</h5>
-            <h5>Cook Time: {{ post.cook_time_lower }} min - {{ post.cook_time_upper }} min </h5>
-        </div>
+    
       </div>
-  </div>
-  <div class='container grid-5'>
-      <div class='container recipe-info'>
-          <div class='container instructions'>
-            <h3>Instructions</h3>
-            <ol class='container recipe-list'>
-              {% if post.instructions_1 != '.' %}
-                <li>{{ post.instructions_1 }}</li>
-              {% endif %}
-              {% if post.instructions_2 != '.' %}
-                <li>{{ post.instructions_2 }}</li>
-              {% endif %}
-              {% if post.instructions_3 != '.' %}
-                <li>{{ post.instructions_3 }}</li>
-              {% endif %}
-              {% if post.instructions_4 != '.' %}
-                <li>{{ post.instructions_4 }}</li>
-              {% endif %}
-            </ol>         
-          </div>
-
-          <div class='contaner ingredients'>
-            <h3>Ingredients</h3>
-            <ul class='container recipe-list'>
-              {% if post.ingredients_1 != '.' %}
-                <li>{{ post.ingredients_1 }}</li>
-              {% endif %}
-              {% if post.ingredients_2 != '.' %}
-                <li>{{ post.ingredients_2 }}</li>
-              {% endif %}
-              {% if post.ingredients_3 != '.' %}
-                <li>{{ post.ingredients_3 }}</li>
-              {% endif %}
-              {% if post.ingredients_4 != '.' %}
-                <li>{{ post.ingredients_4 }}</li>
-              {% endif %}
-            </ul>
-          </div>
-        </div>
-  </div>
-</div>
-
+    </div>
+      
+<script src="{% static 'js/dessert.js' %}"></script>
 {% endfor %}
 {% endblock dessert_content %}
-
+        

@@ -1,36 +1,44 @@
-{% extends "food_app/base.html" %}
+{% extends "food_app/wine_base.html" %}
 {% load static %}
-{% block content %}
+{% block wine_content %}
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+  integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+  integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css"
   href="{% static 'wine.css' %}">
 
   {% for post in posts %}
-  <div class='container info-boxes'data-aos="fade-right">
-      <div class='box image-3' >
-        <a href='#'>
-          <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
-        </a>
+
+    <section>
+      <div class="blog-card">
+        <div class="meta">
+          <img class="photo" src='{{ post.image.url }}'></img>
+        </div>
+        <div class="description">
+          <h1>{{post.title}}</h1>
+          <p>{{post.description}}</p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
       </div>
-      <div class='box text-3'>
-        <h1>Perfect Wine Generator</h1>
-        <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-          to pair it with!
-        </p>
-      </div>
-  </div>
-
-
-
-
-
-
-
-
+    </section>
   {% endfor %}
-  {% endblock content %}
+
+
+
+
+
+<script src="{% static 'js/wine.js' %}"></script>
+
+{% endblock wine_content %}

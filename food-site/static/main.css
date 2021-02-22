@@ -8,13 +8,31 @@
   padding:0px;
 }
 
+main{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  z-index: 11;
+}
+
+body{
+  text-align: center;
+}
+
 nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color:white;
+  background-color:#fff;
   font-family: 'Poppins', sans-serif;
+
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
 }
 
 .logo{
@@ -23,6 +41,17 @@ nav{
   font-size:10px;
   padding-top:5px;
   /*text-transform: uppercase;*/
+
+}
+
+nav ul{
+  position:sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .logo-lettering{
@@ -38,7 +67,7 @@ nav{
 .nav-links{
   display: flex;
   justify-content: space-around;
-  width:35%;
+  width:45%;
   padding-top: 15px;
 }
 
@@ -51,14 +80,16 @@ nav{
   color:rgb(194, 98, 19);
   text-decoration: none;
   letter-spacing: 3px;
+  width:40px;
   font-weight:bold;
   font-size:14px;
+  padding:7px;
 }
 
 .burger div{
   width:25px;
   height:3px;
-  background-color:rgb(102,0,0);
+  background-color:rgb(194, 98, 19);
   margin:5px;
   transition: all 0.3s ease;
 }
@@ -66,6 +97,7 @@ nav{
 .burger{
   display: none;
 }
+
 
 
 
@@ -159,14 +191,14 @@ nav{
     right:0px;
     height:52vh;
     top:8vh;
-    background-color:white;
+    background-color:rgb(20, 4, 4);
     display:flex;
     flex-direction:column;
     align-items: center;
     width:50%;
     transform:translateX(100%);
     transition: transform 0.5s ease-in;
-    color:rgb(102,0,0);
+    color:#fff;
   }
 
   .nav-links li{
@@ -204,3 +236,6 @@ nav{
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
+.footer-tags{
+  text-align: left;
+}

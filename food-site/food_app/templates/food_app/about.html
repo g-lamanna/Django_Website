@@ -7,23 +7,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+  integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+  integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css"
   href="{% static 'about.css' %}">
 
-  <div class='container bio-container'>
-    <div class='container bio-image'>
-      <img class='img-fluid' src="{% static 'images/steeler.jpg' %}">
+  <section>
+    <div class='container bio_container'>
+      <div class='container image-container'>
+        <img class='img-fluid bio-image' src="{% static 'images/santa_monica.jpg' %}">
+      </div>
+      <div class='container bio-text'>
+        <h1>About</h1>
+        <p>Hi I'm Gabe and this is Margot. I'm an aspiring software engineer and she is in med school. When quarantine started, it was a chance for us to do all the stuff
+          that we said we would do if only we had the time...Cooking has always been a passion of ours and creating recipes is what we
+          realized we loved to do.  We don't have a full staff of developers and bloggers keeping, just Margot and I. Everything we write
+          is from our own experience, studies and passions.  We hope you enjoy all of our content and recipes!
+        </p>
+      </div>
     </div>
-    <div class='container bio-text'>
-      <h6>HELLO</h6>
-    </div>
+  </section>
+
+  <div class='slider'>
+
   </div>
 
 
 
 
 
-
-
+  <script src="{% static 'js/about.js' %}"></script>
 
   {% endblock content %}

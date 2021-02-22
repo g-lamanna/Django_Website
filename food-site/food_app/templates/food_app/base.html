@@ -7,7 +7,7 @@
   {% if title %}
     <title>{{title}}</title>
   {% else %}
-    <title>Gnoccio</title>
+    <title>gabriel's table</title>
   {% endif %}
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -21,12 +21,13 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css"
   href="{% static 'main.css' %}">
+  
 </head>
 <body>
   <main role='main'>
     <!--NAV-->
 
-    <nav>
+    <nav class='sticky'>
       <div class='logo'>
         <a href="{% url 'site-home' %}"><h4 class='logo-lettering'>
           gabriel's table
@@ -34,10 +35,11 @@
       </a>
       </div>
       <ul class='nav-links'>
-        <li><a href="{% url 'site-snack' %}">Snack</a></li>
+        <li><a href="{% url 'site-snack' %}#">Snack</a></li>
         <li><a href="{% url 'site-dinner' %}">Dinner</a></li>
         <li><a href="{% url 'site-dessert' %}">Dessert</a></li>
         <li><a href="{% url 'site-wine' %}">Wine</a></li>
+        <li><a href="{% url 'site-tips'%}">Food Tips</a></li>
         <li><a href="{% url 'site-about' %}">About</a></li>
       </ul>
       <div class='burger'>
@@ -48,7 +50,7 @@
     </nav>
     <!--MAIN CONTENT-->
    </main>
-  
+
   <div class='container-fluid main-body'>
     {% if messages %}
       {% for message in messages %}
@@ -58,7 +60,6 @@
       {% endfor %}
     {% endif %}
     {% block content %}{% endblock content%}
-    <br>
   </div>
   <!--Site footer -->
   <footer class="site-footer container-fluid">
@@ -75,7 +76,7 @@
           <div class="col-xs-6 col-md-3">
             <h6>Contact Us</h6>
             <ul class="footer-links">
-              <li>Email: Gnoccio@gmail.com</li>
+              <li>Email: gabrielstable@gmail.com</li>
               <li>Phone: ###-###-####</li>
             </ul>
           </div>
@@ -84,11 +85,12 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
+          <div class="col-md-8 col-sm-6 col-xs-12 footer-tags">
             <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-          <a href="#">Gnoccio</a>.
+          <a href="#">gabriel's table</a>.
             </p>
             <p><a href="https://www.freepik.com/photos/food">Food photo created by freepik - www.freepik.com</a></p>
+            <p>Photo by Julia Kuzenkov from Pexels</p>
           </div>
         </div>
       </div>
