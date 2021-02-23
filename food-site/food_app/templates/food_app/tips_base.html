@@ -12,26 +12,23 @@ href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css"
-href="{% static 'tips.css' %}">
+href="{% static 'css/tips.css' %}">
 
 
 
 
 
 <section>
-  <div class='container tips-grid'>
-    <div class='container page-grid'>
-      <div class='container page-title'>
-        
-        <h1 style='font-size:70px;'>#Food Tips</h1>
-        <p style='font-size:20px; letter-spacing: 0px;'>Learn all of our tips and tricks when it comes to making your food the best way possible.</p>
-
-      </div>
-      
+    <div class='container-fluid jumbotron-background-img'> 
+        <img class='img-fluid bg-image' src="{% static 'images/tips_banner.jpg' %}">
+        <h4 class='centered-logo'>
+          #Tips and Tricks
+        </h4>
     </div>
+  <div class='container tips-grid'>
     <div class='container large-grid'>
+        <img class='img-fluid' src="{% static 'images/kneeding_dough.jpg' %}">
         <a href='#'><h1>How to make homemade dough for any baking occasion</h1></a>
-        <p>From bread to pasta, learn how to kneed dough, learn which recipes to get </p>
         <div class='container' style='margin-top: 20px;'>
             {% block tips_content %} {% endblock tips_content %}
         </div>

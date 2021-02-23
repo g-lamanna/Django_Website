@@ -15,11 +15,11 @@
   integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
   crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css"
-  href="{% static 'wine.css' %}">
+  href="{% static 'css/wine.css' %}">
 
   {% for post in posts %}
 
-    <section>
+    <section class='container blog-container'>
       <div class="blog-card">
         <div class="meta">
           <img class="photo" src='{{ post.image.url }}'></img>

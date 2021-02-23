@@ -1,0 +1,30 @@
+.bg-image{
+  max-width:100%;
+  padding:0px;
+}
+
+.jumbotron-background-img{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+  }
+
+
+
+  .centered-logo {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color:#ffff;
+    letter-spacing: 12px;
+    font-size:60px;
+    padding-top:5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }

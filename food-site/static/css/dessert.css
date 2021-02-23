@@ -288,3 +288,59 @@ li{
 .ingredients h3{
   text-align: left;
 }
+
+@media screen and (max-width:1200px){
+  li{
+    font-size:12px;
+  }
+  .instructions h3{
+    text-align: left;
+  }
+  .ingredients h3{
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:992px){
+  li{
+    font-size:10px;
+  }
+  .instructions h3{
+    font-size:15px;
+  }
+  .ingredients h3{
+    font-size:15px;
+  }
+  .info-container h4{
+    font-size: 15px;
+  }
+  .info-container h5{
+    font-size: 12px;
+  }
+
+  .info-container .rating{
+    font-size:10px;
+  }
+  
+}
+
+@media screen and (max-width:762px){
+  li{
+    font-size:9px;
+  }
+  .instructions h3{
+    font-size:12px;
+  }
+  .ingredients h3{
+    font-size:12px;
+  }
+  .info-container h4{
+    font-size: 13px;
+  }
+  .info-container h5{
+    font-size: 10px;
+  }
+  .info-container .rating{
+    font-size:7px;
+  }
+}
