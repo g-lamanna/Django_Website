@@ -111,17 +111,31 @@
     font-family:'Noto Sans TC', sans-serif;
     opacity:80%;
     height:200px;
+   
   }
 
   .title{
     font-size:40px;
-    color:rgb(236, 233, 233);
+    
+  }
+  .title a{
+    color:salmon;
   }
 
   .wine-grid-container{
     height:80%;
     padding:20px 0px 20px 0px;
   }
+
+
+  .large-tile a{
+    color:#0fffb7
+  }
+  
+  .large-tile p{
+    color:#0fffb7
+  }
+  
 
 .heading-container{
   height:600px;

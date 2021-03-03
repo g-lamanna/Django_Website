@@ -22,3 +22,36 @@ let letters = 0;
 
 
 }());
+
+const get_random_wine = () =>{
+  generator_list = [
+    {
+      "name":"Cabernet Sauvignon",
+      "overview":`World's most popular wine is a natural cross between 
+      Cabernet france and Sauvignon Blanc that originates in Bordeaux. 
+      Wines are concentrated and age worthy.`
+    },
+    {
+      "name":"Cabernet Franc",
+      "overview":`World's most popular wine is a natural cross between 
+      Cabernet france and Sauvignon Blanc `
+    },
+    {
+      "name":"Merlot",
+      "overview":`d Sauvignon Blanc that originates in Bordeaux. 
+      Wines are concentrated and age worthy.`
+    }
+  
+  ];
+  //Generates random dictionary to be cycled through
+  const random = Math.floor(Math.random()*generator_list.length)
+  let name = document.querySelector('.wine_name');
+  let overview = document.querySelector('.wine_overview');
+  name.innerHTML = Object.values(generator_list[random])[0];
+  overview.innerHTML = Object.values(generator_list[random])[1];
+  document.querySelector('.wine-scenery').style.display = 'block';
+};
+
+//Executes function on 'onclick' event
+document.getElementById('generate_wine').onclick = get_random_wine;
+

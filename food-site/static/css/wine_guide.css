@@ -231,7 +231,7 @@ hr{
   height:24px;
   overflow: hidden;
   color:rgb(83, 8, 202);
-
+  cursor:pointer;
   float:left;
   
   padding:15px;
