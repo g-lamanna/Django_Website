@@ -56,7 +56,46 @@ document.querySelectorAll('.rolling').forEach(info_icon=>{
 
 let hidden_info_icon = document.querySelector('.ball');
 let display_icon = document.querySelector('.balls')
-let info_icon = document.querySelector('.rolling') 
+let info_icon = document.querySelector('.rolling')
 
+mapped_regions = [
+  {
+    'wine_id':'map-cab',
+    'lat':44.849239,
+    'long':-0.586217
+  },
+  {
+    'wine_id':'map-zin',
+    'lat':38.291812,
+    'long':-122.398984
+  },
+  {
+    'wine_id':'map-sango',
+    'lat':41.044835,
+    'long':16.722095
+  }
+]
+
+
+//Embedded Google Maps
+//Initialize and add map
+function initMap(){
+
+  for(i = 0; i < mapped_regions.length; i++){
+          //The location of region
+  let region = {lat:Object.values(mapped_regions[i])[1], lng:Object.values(mapped_regions[i])[2]};
+  //The map, centered at the region, in this test case, Bordeaux, France.
+  let map = new google.maps.Map(document.getElementById(Object.values(mapped_regions[i])[0]),{
+    zoom:6,
+    center:region,
+  });
+  //The marker, position at specified region
+  const marker  = new google.maps.Marker({
+    position:region,
+    map:map,
+  });
+     
+  }
+}
 
 

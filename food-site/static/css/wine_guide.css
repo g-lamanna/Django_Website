@@ -37,11 +37,23 @@
   max-width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   padding:10px 10px 10px 10px;
   background-color:#ffff;
   color:rgb(0,0,5);
   
+}
+
+.google-map{
+
+  grid-column: 4/8;
+  grid-row:2/5;
+}
+
+.map{
+  height:100%;
+  width:100%;
+  background:black;
 }
 
 .title-text-grid{
@@ -61,8 +73,7 @@
 }
 
 .wine-ratings-grid{
-  grid-column: 4/8;
-  grid-row: 2/5;
+
 
   font-size:25px;
   margin:0px;
@@ -79,6 +90,7 @@
 .rating-box{
   width:65%;
   text-align: left;
+
 }
 
 .rating-labels{
@@ -138,13 +150,13 @@ display: flex;
   color:rgb(0,0,5);
   display:flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .wine-description{
   display:flex;
   flex-direction: column;
-  text-align: left;
+  text-align:left;
 }
 
 
@@ -213,12 +225,17 @@ hr{
 .artifacts{
   grid-column: 4/8;
   grid-row: 1/2;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .artifacts-grid{
   display:flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 

@@ -32,14 +32,29 @@ const get_random_wine = () =>{
       Wines are concentrated and age worthy.`
     },
     {
-      "name":"Cabernet Franc",
-      "overview":`World's most popular wine is a natural cross between 
-      Cabernet france and Sauvignon Blanc `
+      "name":"Muscat of Alexandria",
+      "overview":`Another important Muscat variety use primarily for dessert wines and off dry white
+      wines.  Muscat of Alexandria offers slightly more orange zest and sweet rose notes that Muscat Blanc. `
     },
     {
-      "name":"Merlot",
-      "overview":`d Sauvignon Blanc that originates in Bordeaux. 
-      Wines are concentrated and age worthy.`
+      "name":"Pinot Gris",
+      "overview":`A pink grape mutation of Pinot Noir that's most famous for it's zesty white wines that range
+      in style from dry to just plain sweet.`
+    },
+    {
+      "name":"Sagrantino",
+      "overview":`A rare, deeply bold, central-italian red that's recently been noted for having 
+      some of the highest levels of tannins and antioxidants of any red wine.`
+    },
+    {
+      "name":"Sangiovese",
+      "overview":`Sangiovese is Italy's most planted grape and the key variety in Tuscany's renowned
+      Chianti.  It's sensetive, tasting quite different depending on where it grows.`
+    },
+    {
+      "name":"Verdejo",
+      "overview":`An herbaceous white wine that grows almost exclusively in the Rueda region of Spain.
+      Not to be confused with Verdehlo, a Portugese grape used in Madeira.`
     }
   
   ];

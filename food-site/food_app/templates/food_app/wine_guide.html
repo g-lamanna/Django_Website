@@ -24,138 +24,122 @@
     <h1>Gabriel's Wine Guide 2021</h1>
   </div>
 
+  
   <div class='container encasing-wine-grid'>
       <div class='container title-text-grid'>
         <h1>Cabernet Sauvignon</h1>
       </div>
 
-      <div class='container artifacts'>
+     
 
-          <div class='container artifacts-grid'>
-            <div class='scent-object-artifact'>
-              <h4>Country of Origin</h4>
-              <img src="{% static '/images/icons/france.svg' %}"style="padding-left:20px">
-            </div>
-
- 
+          <div class='container artifacts'>
+              <div class='container artifacts-grid'>            
+                  <h1>Where it Commonly Grows:</h1>
+              </div>     
           </div>
 
-          <div class='container artifacts-grid'>
-            <div class='scent-object-artifact'>
-              <h4 style='padding-right:10px'>Blend:</h4>
-              <h4>Deep Red</h4>
-            </div>
-
-            <div class='scent-object-artifact'>
-              <h4>Cost</h4>
-              <img src="{% static '/images/icons/dollar-symbol.svg' %}"style="padding-left:10px">
-              <!-- <img src="{% static '/images/icons/dollar-symbol.svg' %}">
-              <img src="{% static '/images/icons/dollar-symbol.svg' %}"> -->
-            </div>
-          </div>
+      <div class='container google-map'>
+        <div class='map' id='map-cab'></div>
       </div>
       
 
 
 
-      <div class='container wine-ratings-grid'>
-          <div class='rating-box'>
-            <div class='rating-labels'>
-                <p>Alcohol  <div class="container rolling">
-                    <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                    <p class='contract'>The average bottle of wine contains 12% - 15% enthanol, contributing to 
-                      ageability, taste and health.  
-                    </p>
-                  </div>
-  
-                </p>
-                
-            </div>
-            <div class='rating'>
-              <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:80%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Tannins  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>Nautrally occuring polyphenols found in the grape's seeds and skins.
-                        Tannins help to to stabalize the wine and buffer against oxidation.  Tannins release 
-                        a gritty or drying sensation that make your lips stick your teeth.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-2 wow wow animate__animated animate__fadeInLeft"style='width:100%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Sweetness <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>How sweet the wine tastes.  The residual sugar left over from 
-                        unfermented grapes after fermentation occurs.
-                      </p>
-                    </div>
-  
-                  </p>
-                 
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-3 wow animate__animated animate__fadeInLeft"style='width:20%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Acidity  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>Acidity is what gives the wine it's tart and sour taste.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-4 wow animate__animated animate__fadeInLeft"style='width:40%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Body  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>The body refers to how intense the wine is, from light bodied to
-                        full bodied, how full the wine taste from contributing characteristics like aroma 
-                        and tannins.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-5 wow animate__animated animate__fadeInLeft"style='width:100%;'></div>
-            </div>
-          </div>
-        </div>
+      
       <div class='container informational-grid'>
         <div class='container wine-description'>
-            <h1>Overview</h1>
+           
             <p>
                 World's most popular wine is a natural cross between Cabernet france
                 and Sauvignon Blanc that originates in Bordeaux.  Wines are concentrated and age worthy.
-            </p>        
-        </div>
-        <div class='container wine-description'>
-            <h1>Pairing</h1>
-            <p>
                 The Rich flavor and high tannins content in Cabernet Sauvignon makes it a perfect
                 partner to rich grilled meats, peppery sauces, and dishes of high flavor.
             </p>        
         </div>
+
+        <div class='container wine-ratings-grid'>
+            <div class='rating-box'>
+              <div class='rating-labels'>
+                  <p>Alcohol  <div class="container rolling">
+                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                      <p class='contract'>The average bottle of wine contains 12% - 15% enthanol, contributing to 
+                        ageability, taste and health.  
+                      </p>
+                    </div>
+    
+                  </p>
+                  
+              </div>
+              <div class='rating'>
+                <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:80%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Tannins  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>Nautrally occuring polyphenols found in the grape's seeds and skins.
+                          Tannins help to to stabalize the wine and buffer against oxidation.  Tannins release 
+                          a gritty or drying sensation that make your lips stick your teeth.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-2 wow wow animate__animated animate__fadeInLeft"style='width:90%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Sweetness <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>How sweet the wine tastes.  The residual sugar left over from 
+                          unfermented grapes after fermentation occurs.
+                        </p>
+                      </div>
+    
+                    </p>
+                   
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-3 wow animate__animated animate__fadeInLeft"style='width:20%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Acidity  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>Acidity is what gives the wine it's tart and sour taste.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-4 wow animate__animated animate__fadeInLeft"style='width:40%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Body  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>The body refers to how intense the wine is, from light bodied to
+                          full bodied, how full the wine taste from contributing characteristics like aroma 
+                          and tannins.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-5 wow animate__animated animate__fadeInLeft"style='width:60%;'></div>
+              </div>
+            </div>
+          </div>
        
       </div>
       <div class='container wine-scents-title-grid'>
@@ -189,346 +173,312 @@
           </div>
       </div>
     </div>
-
-    <hr class='horizontal-line'>
+    <hr>
   <div class='container encasing-wine-grid'>
       <div class='container title-text-grid'>
-        <h1>Cabernet Sauvignon</h1>
+        <h1>Zinfindel</h1>
       </div>
 
-      <div class='container artifacts'>
+     
 
-          <div class='container artifacts-grid'>
-            <div class='scent-object-artifact'>
-              <h4>Country of Origin</h4>
-              <img src="{% static '/images/icons/france.svg' %}"style="padding-left:20px">
-            </div>
-
- 
+          <div class='container artifacts'>
+              <div class='container artifacts-grid'>            
+                  <h1>Where it Commonly Grows:</h1>
+              </div>     
           </div>
 
-          <div class='container artifacts-grid'>
-            <div class='scent-object-artifact'>
-              <h4 style='padding-right:10px'>Blend:</h4>
-              <h4>Deep Red</h4>
-            </div>
-
-            <div class='scent-object-artifact'>
-              <h4>Cost</h4>
-              <img src="{% static '/images/icons/dollar-symbol.svg' %}"style="padding-left:10px">
-              <!-- <img src="{% static '/images/icons/dollar-symbol.svg' %}">
-              <img src="{% static '/images/icons/dollar-symbol.svg' %}"> -->
-            </div>
-          </div>
+      <div class='container google-map'>
+        <div class='map' id='map-zin'></div>
       </div>
       
 
 
 
-      <div class='container wine-ratings-grid'>
-          <div class='rating-box'>
-            <div class='rating-labels'>
-                <p>Alcohol  <div class="container rolling">
-                    <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                    <p class='contract'>The average bottle of wine contains 12% - 15% enthanol, contributing to 
-                      ageability, taste and health.  
-                    </p>
-                  </div>
-  
-                </p>
-                
-            </div>
-            <div class='rating'>
-              <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:80%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Tannins  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>Nautrally occuring polyphenols found in the grape's seeds and skins.
-                        Tannins help to to stabalize the wine and buffer against oxidation.  Tannins release 
-                        a gritty or drying sensation that make your lips stick your teeth.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-2 wow wow animate__animated animate__fadeInLeft"style='width:100%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Sweetness <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>How sweet the wine tastes.  The residual sugar left over from 
-                        unfermented grapes after fermentation occurs.
-                      </p>
-                    </div>
-  
-                  </p>
-                 
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-3 wow animate__animated animate__fadeInLeft"style='width:20%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Acidity  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>Acidity is what gives the wine it's tart and sour taste.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-4 wow animate__animated animate__fadeInLeft"style='width:40%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Body  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>The body refers to how intense the wine is, from light bodied to
-                        full bodied, how full the wine taste from contributing characteristics like aroma 
-                        and tannins.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-5 wow animate__animated animate__fadeInLeft"style='width:100%;'></div>
-            </div>
-          </div>
-        </div>
+      
       <div class='container informational-grid'>
         <div class='container wine-description'>
-            <h1>Overview</h1>
+           
             <p>
-                World's most popular wine is a natural cross between Cabernet france
-                and Sauvignon Blanc that originates in Bordeaux.  Wines are concentrated and age worthy.
+                A fruit forward yet bold red that's loved for it's jammy fruit and smoky, exotic spice notes.
+                Originally from Croatia, Zinfandel is related to Croatia's #1 red, plavic Mali.
+                Zinfandel is ideal with Turkish, Moroccan and Arabic cuisine, which bring out the grapes
+                cinnamon like spices. Try it with Asian barbecue!
             </p>        
         </div>
-        <div class='container wine-description'>
-            <h1>Pairing</h1>
-            <p>
-                The Rich flavor and high tannins content in Cabernet Sauvignon makes it a perfect
-                partner to rich grilled meats, peppery sauces, and dishes of high flavor.
-            </p>        
-        </div>
+
+        <div class='container wine-ratings-grid'>
+            <div class='rating-box'>
+              <div class='rating-labels'>
+                  <p>Alcohol  <div class="container rolling">
+                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                      <p class='contract'>The average bottle of wine contains 12% - 15% enthanol, contributing to 
+                        ageability, taste and health.  
+                      </p>
+                    </div>
+    
+                  </p>
+                  
+              </div>
+              <div class='rating'>
+                <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:90%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Tannins  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>Nautrally occuring polyphenols found in the grape's seeds and skins.
+                          Tannins help to to stabalize the wine and buffer against oxidation.  Tannins release 
+                          a gritty or drying sensation that make your lips stick your teeth.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-2 wow wow animate__animated animate__fadeInLeft"style='width:70%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Sweetness <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>How sweet the wine tastes.  The residual sugar left over from 
+                          unfermented grapes after fermentation occurs.
+                        </p>
+                      </div>
+    
+                    </p>
+                   
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-3 wow animate__animated animate__fadeInLeft"style='width:30%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Acidity  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>Acidity is what gives the wine it's tart and sour taste.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-4 wow animate__animated animate__fadeInLeft"style='width:30%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Body  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>The body refers to how intense the wine is, from light bodied to
+                          full bodied, how full the wine taste from contributing characteristics like aroma 
+                          and tannins.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-5 wow animate__animated animate__fadeInLeft"style='width:70%;'></div>
+              </div>
+            </div>
+          </div>
        
       </div>
       <div class='container wine-scents-title-grid'>
         <h2>Palate Aroma</h2>
           <div class='container wine-scents-grid'>
             <div class='scent-object'>
-              <h4>Blue Currant</h4>
-              <img src="{% static '/images/icons/currant.svg' %}">
+              <h4>Peach</h4>
+              <img src="{% static '/images/icons/peach.svg' %}">
             </div>
             
             <div class='scent-object'>
-              <h4>Cedar</h4>
-              <img src="{% static '/images/icons/wood.svg' %}">
+              <h4>Black Berry</h4>
+              <img src="{% static '/images/icons/blackberry.svg' %}">
             </div>
 
             <div class='scent-object'>
-              <h4>Graphite</h4>
-              <img src="{% static '/images/icons/pencil.svg' %}">
+              <h4>Tobacco</h4>
+              <img src="{% static '/images/icons/tobacco.svg' %}">
             </div>
 
             <div class='scent-object'>
-              <h4>Baking Spices</h4>
-              <img src="{% static '/images/icons/spice.svg' %}">
+              <h4>Cinnamon</h4>
+              <img src="{% static '/images/icons/cinnamon.svg' %}">
             </div>
 
             <div class='scent-object'>
-              <h4>Black Cherry</h4>
-              <img src="{% static '/images/icons/cherry.svg' %}">
+              <h4>Strawberry</h4>
+              <img src="{% static '/images/icons/strawberry.svg' %}">
             </div>
           
           </div>
       </div>
     </div>
-
-    <hr class='horizontal-line'>
+    <hr>
   <div class='container encasing-wine-grid'>
       <div class='container title-text-grid'>
-        <h1>Cabernet Sauvignon</h1>
+        <h1>Sangiovese</h1>
       </div>
 
-      <div class='container artifacts'>
+     
 
-          <div class='container artifacts-grid'>
-            <div class='scent-object-artifact'>
-              <h4>Country of Origin</h4>
-              <img src="{% static '/images/icons/france.svg' %}"style="padding-left:20px">
-            </div>
-
- 
+          <div class='container artifacts'>
+              <div class='container artifacts-grid'>            
+                  <h1>Where it Commonly Grows:</h1>
+              </div>     
           </div>
 
-          <div class='container artifacts-grid'>
-            <div class='scent-object-artifact'>
-              <h4 style='padding-right:10px'>Blend:</h4>
-              <h4>Deep Red</h4>
-            </div>
-
-            <div class='scent-object-artifact'>
-              <h4>Cost</h4>
-              <img src="{% static '/images/icons/dollar-symbol.svg' %}"style="padding-left:10px">
-              <!-- <img src="{% static '/images/icons/dollar-symbol.svg' %}">
-              <img src="{% static '/images/icons/dollar-symbol.svg' %}"> -->
-            </div>
-          </div>
+      <div class='container google-map'>
+        <div class='map' id='map-sango'></div>
       </div>
       
 
 
 
-      <div class='container wine-ratings-grid'>
-          <div class='rating-box'>
-            <div class='rating-labels'>
-                <p>Alcohol  <div class="container rolling">
-                    <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                    <p class='contract'>The average bottle of wine contains 12% - 15% enthanol, contributing to 
-                      ageability, taste and health.  
-                    </p>
-                  </div>
-  
-                </p>
-                
-            </div>
-            <div class='rating'>
-              <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:80%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Tannins  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>Nautrally occuring polyphenols found in the grape's seeds and skins.
-                        Tannins help to to stabalize the wine and buffer against oxidation.  Tannins release 
-                        a gritty or drying sensation that make your lips stick your teeth.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-2 wow wow animate__animated animate__fadeInLeft"style='width:100%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Sweetness <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>How sweet the wine tastes.  The residual sugar left over from 
-                        unfermented grapes after fermentation occurs.
-                      </p>
-                    </div>
-  
-                  </p>
-                 
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-3 wow animate__animated animate__fadeInLeft"style='width:20%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Acidity  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>Acidity is what gives the wine it's tart and sour taste.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-4 wow animate__animated animate__fadeInLeft"style='width:40%;'></div>
-            </div>
-          </div>
-          <div class='rating-box'>
-              <div class='rating-labels'>
-                  <p>Body  <div class="container rolling">
-                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
-                      <p class='contract'>The body refers to how intense the wine is, from light bodied to
-                        full bodied, how full the wine taste from contributing characteristics like aroma 
-                        and tannins.
-                      </p>
-                    </div>
-  
-                  </p>
-                  
-              </div>
-            <div class='rating'>
-              <div class="rating-level level-5 wow animate__animated animate__fadeInLeft"style='width:100%;'></div>
-            </div>
-          </div>
-        </div>
+      
       <div class='container informational-grid'>
         <div class='container wine-description'>
-            <h1>Overview</h1>
+           
             <p>
-                World's most popular wine is a natural cross between Cabernet france
-                and Sauvignon Blanc that originates in Bordeaux.  Wines are concentrated and age worthy.
+                Sangiovese is Italy's most planted grape and they key variety in Tuscany's renowned Chianti.
+                It's sensative, tasting quite different depending on where it grows.  The high acidity allows
+                Sangiovese to match well with all manners of well-spiced foods.  It's one of the few wines 
+                that will not get lost when paired with tomato sauce.
             </p>        
         </div>
-        <div class='container wine-description'>
-            <h1>Pairing</h1>
-            <p>
-                The Rich flavor and high tannins content in Cabernet Sauvignon makes it a perfect
-                partner to rich grilled meats, peppery sauces, and dishes of high flavor.
-            </p>        
-        </div>
+
+        <div class='container wine-ratings-grid'>
+            <div class='rating-box'>
+              <div class='rating-labels'>
+                  <p>Alcohol  <div class="container rolling">
+                      <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                      <p class='contract'>The average bottle of wine contains 12% - 15% enthanol, contributing to 
+                        ageability, taste and health.  
+                      </p>
+                    </div>
+    
+                  </p>
+                  
+              </div>
+              <div class='rating'>
+                <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:70%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Tannins  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>Nautrally occuring polyphenols found in the grape's seeds and skins.
+                          Tannins help to to stabalize the wine and buffer against oxidation.  Tannins release 
+                          a gritty or drying sensation that make your lips stick your teeth.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-2 wow wow animate__animated animate__fadeInLeft"style='width:70%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Sweetness <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>How sweet the wine tastes.  The residual sugar left over from 
+                          unfermented grapes after fermentation occurs.
+                        </p>
+                      </div>
+    
+                    </p>
+                   
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-3 wow animate__animated animate__fadeInLeft"style='width:10%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Acidity  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>Acidity is what gives the wine it's tart and sour taste.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-4 wow animate__animated animate__fadeInLeft"style='width:90%;'></div>
+              </div>
+            </div>
+            <div class='rating-box'>
+                <div class='rating-labels'>
+                    <p>Body  <div class="container rolling">
+                        <figure class="ball"><i class="fas fa-info-circle"></i></figure>
+                        <p class='contract'>The body refers to how intense the wine is, from light bodied to
+                          full bodied, how full the wine taste from contributing characteristics like aroma 
+                          and tannins.
+                        </p>
+                      </div>
+    
+                    </p>
+                    
+                </div>
+              <div class='rating'>
+                <div class="rating-level level-5 wow animate__animated animate__fadeInLeft"style='width:70%;'></div>
+              </div>
+            </div>
+          </div>
        
       </div>
       <div class='container wine-scents-title-grid'>
         <h2>Palate Aroma</h2>
           <div class='container wine-scents-grid'>
             <div class='scent-object'>
-              <h4>Blue Currant</h4>
-              <img src="{% static '/images/icons/currant.svg' %}">
+              <h4>Sweet Balsamic</h4>
+              <img src="{% static '/images/icons/vinegar.svg' %}">
             </div>
             
             <div class='scent-object'>
-              <h4>Cedar</h4>
-              <img src="{% static '/images/icons/wood.svg' %}">
+              <h4>Oregano</h4>
+              <img src="{% static '/images/icons/oregano.svg' %}">
             </div>
 
             <div class='scent-object'>
-              <h4>Graphite</h4>
-              <img src="{% static '/images/icons/pencil.svg' %}">
+              <h4>Expresso</h4>
+              <img src="{% static '/images/icons/expresso.svg' %}">
             </div>
 
             <div class='scent-object'>
-              <h4>Baking Spices</h4>
-              <img src="{% static '/images/icons/spice.svg' %}">
-            </div>
-
-            <div class='scent-object'>
-              <h4>Black Cherry</h4>
+              <h4>Cherry</h4>
               <img src="{% static '/images/icons/cherry.svg' %}">
+            </div>
+
+            <div class='scent-object'>
+              <h4>Roasted Tomato</h4>
+              <img src="{% static '/images/icons/tomato.svg' %}">
             </div>
           
           </div>
       </div>
     </div>
 
-    <hr class='horizontal-line'>
-
+  
    
     
  <script src="{% static 'js/wine_guide.js' %}"></script>
+ <script async
+    src="https://maps.googleapis.com/maps/api/js?key=???&callback=initMap">
+</script>
 {% endblock content %}
 
 

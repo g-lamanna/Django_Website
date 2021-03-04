@@ -201,6 +201,10 @@ body, html{
 
 }
 
+.article-grid-image1{
+  border-radius:100px;
+}
+
 
 .grid-image-left{
   grid-column: 1/3;
