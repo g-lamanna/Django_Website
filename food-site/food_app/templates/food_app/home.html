@@ -18,6 +18,8 @@
   integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
   crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css"
+  href="{% static 'css/imagehover.css' %}">
+  <link rel="stylesheet" type="text/css"
   href="{% static 'css/home.css' %}">
 
   <div class='container jumbotron_background_img'> 
@@ -79,6 +81,7 @@
 
 
 
+
 <div class='container food-style-columns'>
   <div class='container left-column'>
       <h1 class='type-heading'>#Editor's Picks</h1>
@@ -88,88 +91,88 @@
 
 
  <div class='container article-grid'>
-   <div class='container grid-image-left'>
+   <div class='container grid-image-left imghvr-push-right'>
      <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-     <h3>Classic French Onion Soup</h3>
-     <small>
+     <figcaption>
+       <h3>Classic French Onion Soup</h3>
         Delve into the french country side with this classic soup.
         Delve into the french country side with this classic soup.
-     </small>
+    </figcaption>
    </div>
-   <div class='container grid-image-center'>
+   <div class='container grid-image-center imghvr-push-right'>
      <a href="{% url 'site-dinner' %}#chicken"><img class='img-fluid article-grid-image1' src="{% static 'images/Chicken_Spinach_Alfredo_copy.jpg' %}" href="#"></a>
-     <h3>Alfredo Chicken and Spinach</h3>
-     <small>
-        Delve into the french country side with this classic soup.
-        Delve into the french country side with this classic soup.
-     </small>
+     <figcaption>
+        <h3>Classic French Onion Soup</h3>
+         Delve into the french country side with this classic soup.
+         Delve into the french country side with this classic soup.
+     </figcaption>
     </div>
-   <div class='container grid-image-right'>
+   <div class='container grid-image-right imghvr-push-right'>
      <img class='img-fluid article-grid-image1' src="{% static 'images/pizza.jpg' %}" href="#">
-     <h3>Homemade Neopolitan Pizza</h3>
-     <small>
-        Delve into the french country side with this classic soup.
-        Delve into the french country side with this classic soup.
-     </small>
+     <figcaption>
+        <h3>Classic French Onion Soup</h3>
+         Delve into the french country side with this classic soup.
+         Delve into the french country side with this classic soup.
+     </figcaption>
    </div>
 
  </div>
 
  <div class='container article-grid'>
-    <div class='container grid-image-left'>
+    <div class='container grid-image-left imghvr-push-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/ribs_copy.jpg' %}" href="#">
-      <h3>Nashville Style Ribs</h3>
-      <small>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-      </small>
+      <figcaption>
+          <h3>Classic French Onion Soup</h3>
+           Delve into the french country side with this classic soup.
+           Delve into the french country side with this classic soup.
+       </figcaption>
     </div>
 
-    <div class='container grid-image-center'>
+    <div class='container grid-image-center imghvr-push-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/pulled_pork.jpg' %}" href="#">
-      <h3>Louisiana Pulled Pork</h3>
-      <small>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-      </small>
+      <figcaption>
+          <h3>Classic French Onion Soup</h3>
+           Delve into the french country side with this classic soup.
+           Delve into the french country side with this classic soup.
+       </figcaption>
     </div>
 
-    <div class='container grid-image-right'>
+    <div class='container grid-image-right imghvr-push-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/christmas_cookies.jpg' %}" href="#">
-      <h3>Traditional Holiday Cookies</h3>
-      <small>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-      </small>
+      <figcaption>
+          <h3>Classic French Onion Soup</h3>
+           Delve into the french country side with this classic soup.
+           Delve into the french country side with this classic soup.
+       </figcaption>
     </div>
 
   </div>
 
  <div class='container article-grid'>
-    <div class='container grid-image-left'>
+    <div class='container grid-image-left imghvr-push-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-      <h3>French Onion Soup</h3>
-      <small>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-      </small>
+      <figcaption>
+          <h3>Classic French Onion Soup</h3>
+           Delve into the french country side with this classic soup.
+           Delve into the french country side with this classic soup.
+       </figcaption>
     </div>
-    <div class='container grid-image-center'>
+    <div class='container grid-image-center imghvr-push-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-      <h3>French Onion Soup</h3>
-      <small>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-      </small>
+      <figcaption>
+          <h3>Classic French Onion Soup</h3>
+           Delve into the french country side with this classic soup.
+           Delve into the french country side with this classic soup.
+       </figcaption>
     </div>
 
-    <div class='container grid-image-right'>
+    <div class='container grid-image-right imghvr-push-right'>
       <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-      <h3>French Onion Soup</h3>
-      <small>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-      </small>
+      <figcaption>
+          <h3>Classic French Onion Soup</h3>
+           Delve into the french country side with this classic soup.
+           Delve into the french country side with this classic soup.
+       </figcaption>
     </div>
 
   </div>
@@ -284,7 +287,7 @@
 
   </div>
   <div class='container right-grid'>
-    <img class='img-fluid large-popular-image' src="{% static 'images/burger.jpg' %}" href="#">
+    <img class='img-fluid large-popular-image ' src="{% static 'images/burger.jpg' %}" href="#">
   </div>
 </div>
 
@@ -293,6 +296,8 @@
 
 <br>
 <br>
+
+
 
 
  <script src="{% static 'js/home.js' %}"></script>
