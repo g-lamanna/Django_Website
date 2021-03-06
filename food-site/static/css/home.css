@@ -405,6 +405,9 @@ body, html{
   flex-wrap:row;
   justify-content:center;
   width:100%;
+  background: url("/static/images/guac_copy.JPG");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .type-heading{
@@ -412,6 +415,7 @@ body, html{
   font-size: 50px;
   color:#fff;
   letter-spacing: 6px;
+ 
 }
 
 .left-column{
@@ -864,6 +868,7 @@ section{
     flex-wrap:row;
     justify-content: space-around;
     width:30%;
+    
   }
   
   .type-heading{
@@ -871,6 +876,7 @@ section{
     font-size: 15px;
     color:#fff;
     letter-spacing: 5px;
+    background: url('static/images/kasumi.jpg');
   }
 
 }
