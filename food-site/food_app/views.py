@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from .models import Dinner_Post, Dessert_Post, Snack_Post, Wine_Post, Tips_Post
+from django.template.defaulttags import register
+from .models import Dinner_Post, Dessert_Post, Snack_Post, Wine_Post, Tips_Post, Wine_Generator
+
 
 def home(request):
   return render(request,'food_app/home.html')

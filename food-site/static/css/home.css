@@ -31,7 +31,7 @@ body, html{
   flex-direction: column;
   align-content: center;
   align-items: center;
-  color:rgb(194, 98, 19);
+  color:rgba(95, 48, 48, 0.925);
   letter-spacing: 12px;
   font-size:40px;
   padding-top:5px;
@@ -73,7 +73,7 @@ body, html{
 
 .jumbotron_background_img h6{
   letter-spacing: 0px;
-  color:rgb(194, 98, 19);
+  color:rgba(95, 48, 48, 0.925);
 }
 
 
@@ -283,7 +283,7 @@ body, html{
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  background-color: rgb(233, 159, 99);
+  background-color: rgba(95, 48, 48, 0.925);
   font-size:70px;
   
 }
@@ -375,7 +375,7 @@ body, html{
   color:white;
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
-  background-color:  rgb(233, 159, 99);
+  background-color:  rgba(95, 48, 48, 0.925);
   letter-spacing: 5px;
 }
 
@@ -384,7 +384,7 @@ body, html{
 .latest-heading{
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(233, 159, 99);
+  background-color:rgba(95, 48, 48, 0.925);
   color:white;
   letter-spacing: 8px;
   margin:50px 0px 0px 0px;
@@ -399,27 +399,31 @@ body, html{
 }
 
 .food-style-columns{
-  padding:70px 0px 10px 0px;
+  padding:70px 0px 70px 0px;
+  margin:50px 80px;
   display:flex;
   flex-direction:row;
   flex-wrap:row;
   justify-content:center;
   width:100%;
-  background: url("/static/images/guac_copy.JPG");
+  background: url("/static/images/kasumi.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 .type-heading{
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   color:#fff;
   letter-spacing: 6px;
  
 }
 
 .left-column{
-  background-color:rgb(5, 0, 0);
+  background-color:rgba(95, 48, 48, 0.925);
+ 
+  margin:0px 300px 0px 300px;
 }
 
 .parent-banner-container{
@@ -437,7 +441,7 @@ body, html{
   grid-template-rows: 1fr;
   margin:0px;
   padding:0px;
-  background-color:rgb(5,0,0);
+  background-color:rgba(95, 48, 48, 0.925);
   max-width: 100%;
   margin:50px 0px 80px 0px;
 }
@@ -449,6 +453,7 @@ body, html{
 }
 
 section{
+  background: rgb(247, 242, 242);
   
 }
 .mid-banner-text{
@@ -492,37 +497,64 @@ section{
 .large-right-tile h1{
   font-size:50px;
   font-family:'Noto Sans TC', sans-serif;
+  background:rgba(95, 48, 48, 0.925);
+  padding:0px 16px 0px 16px;
 }
 
 .large-right-tile p{
   font-size:25x;
   font-family:'Noto Sans TC', sans-serif;
+  background:rgba(95, 48, 48, 0.925);
 }
 
 .top-middle-tile{
-  background: url("/static/images/pasta_homemade.JPG");
+  background: url("/static/images/pasta_tray.JPG");
   background-repeat: no-repeat;
   background-size: 100%;
   height:500px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(8, 8, 8);
-  justify-content: flex-end;
+  color:rgb(235, 228, 228);
+  justify-content: center;
+  font-size:30px;
+  font-family:'Noto Sans TC', sans-serif;
+
+}
+
+.top-middle-tile h3{
+  background: rgba(95, 48, 48, 0.925);
+}
+.middle-tile h3{
+  background: rgba(95, 48, 48, 0.925);
+}
+.bottom-middle-tile h3{
+  background: rgba(95, 48, 48, 0.925);
+}
+.middle-tile{
+  background: url("/static/images/wine_guide_home.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:500px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:rgb(235, 228, 228);
+  justify-content: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
 
 }
 .bottom-middle-tile{
-  background: url("/static/images/guac_copy.JPG");
+  background: url("/static/images/guac_copy.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height:500px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(8, 8, 8);
-  justify-content: flex-end;
+  color:rgb(235, 228, 228);
+  justify-content: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
 
@@ -541,7 +573,7 @@ section{
   justify-content: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
-  opacity:80%;
+  
 }
 
 .is-vertical a{
@@ -562,7 +594,7 @@ section{
   align-items: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
-  opacity:80%;
+  
 }
 .dessert-tile{
   background: url("/static/images/almonds.JPG");
@@ -575,7 +607,7 @@ section{
   align-items: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
-  opacity:80%;
+  
 }
 .wine-tile{
   background: url("/static/images/red-wine-copy.JPG");
@@ -588,8 +620,21 @@ section{
   align-items: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
-  opacity:80%;
+ 
   
+}
+
+.snack-tile h3{
+  background:rgba(95, 48, 48, 0.925);
+}
+.dinner-tile h3{
+  background:rgba(95, 48, 48, 0.925);
+}
+.dessert-tile h3{
+  background:rgba(95, 48, 48, 0.925);
+}
+.wine-tile h3{
+  background:rgba(95, 48, 48, 0.925);
 }
 
 /* .top-middle-tile:hover{
