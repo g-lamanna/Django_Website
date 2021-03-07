@@ -11,4 +11,5 @@ urlpatterns = [
     path('tips/', views.tips, name='site-tips'),
     path('wine-guide/', views.wine_guide, name='site-wine_guide'),
     path('wine-generator/', views.wine_generator, name='site-wine_generator'),
+    path('wine-make/', views.wine_make, name='site-wine_make'),
 ]

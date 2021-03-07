@@ -46,3 +46,6 @@ def wine_guide(request):
 
 def wine_generator(request):
   return render(request, 'food_app/wine_generator.html')
+
+def wine_make(request):
+  return render(request, 'food_app/wine_make.html')
