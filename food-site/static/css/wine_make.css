@@ -1,0 +1,36 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+.page-header{
+  margin:50px 200px;
+  padding:0px 120px;
+}
+
+.page-header h1{
+  font-family: 'Shippori Mincho', serif;
+  font-size:50px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.content{
+  margin:0px 200px;
+  padding:0px 120px;
+  text-align: left;
+}
+
+.content h1{
+  font-weight:bold;
+}
+
+.content p{
+  font-family: 'Shippori Mincho', serif;
+  font-size:20px;
+}
+
+.image-container{
+  margin:50px 0px;
+}
