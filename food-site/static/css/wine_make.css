@@ -31,6 +31,158 @@
   font-size:20px;
 }
 
+.items-to-consider{
+  display:flex;
+  justify-content: space-evenly;
+  padding:0px 0px;
+  margin:0px 0px;
+  
+
+}
+
+.item-icon{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-icon h5{
+  font-weight: bold;
+  font-family: 'Shippori Mincho', serif;
+  font-size:20px;
+}
+
+.item-icon img{
+  height:35px;
+  padding:0px;
+}
+
+img{
+  height:50px;
+  padding: 0px 40px 0px 40px;
+}
+
+.barrel-age-img{
+  padding: 20px 40px 20px 40px;
+}
+.prim-ferm-img{
+  padding: 20px 40px 20px 40px;
+}
+.drain-img{
+  padding: 20px 40px 20px 40px;
+}
+
+.wine_crush{
+  padding: 20px 20px 20px 20px;
+}
+
+.corker_image{
+  padding: 20px 20px 20px 20px;
+}
+
+video{
+  height:100%;
+  padding: 20px 20px 20px 20px;
+}
+
 .image-container{
   margin:50px 0px;
+}
+
+.check-list{
+  padding:0px 40px;
+  display:flex;
+  justify-content: flex-start;
+}
+.check-list li{
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.recap{
+  padding:0px 40px;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.recap li{
+  font-size:20px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+@media screen and (max-width:1202px){
+  .page-header{
+    margin:50px 150px;
+    padding:0px 90px;
+  }
+  .page-header h1{
+    font-size:40px;
+  }
+  .content{
+    margin:0px 150px;
+    padding:0px 90px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:958px){
+  .page-header{
+    margin:50px 130px;
+    padding:0px 70px;
+  }
+  .page-header h1{
+    font-size:40px;
+  }
+  .content{
+    margin:0px 130px;
+    padding:0px 70px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:18px;
+  }
+}
+
+
+
+@media screen and (max-width:781px){
+  .page-header{
+    margin:50px 70px;
+    padding:0px 35px;
+  }
+  .page-header h1{
+    font-size:30px;
+  }
+  .content{
+    margin:0px 70px;
+    padding:0px 35px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:14px;
+  }
+}
+
+@media screen and (max-width:474px){
+  .page-header{
+    margin:50px 40px;
+    padding:0px 25px;
+  }
+  .page-header h1{
+    font-size:25px;
+  }
+  .content{
+    margin:0px 40px;
+    padding:0px 25px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:12px;
+  }
 }
