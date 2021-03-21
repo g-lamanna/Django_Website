@@ -17,10 +17,13 @@ body, html{
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding:0px 0px 0px 0px;
-
+  background: url("/static/images/wine_guide_home.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   flex-wrap: row;
 
 }
@@ -33,10 +36,14 @@ body, html{
   align-items: center;
   color:rgba(95, 48, 48, 0.925);
   letter-spacing: 12px;
-  font-size:40px;
+  font-size:41px;
   padding-top:5px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+}
+
+.centered-logo a{
+  color:rgba(95, 48, 48, 0.925);
 }
 
 .front-banner-text{
@@ -259,7 +266,8 @@ body, html{
   grid-row:1/2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  
 }
 .right-grid{
   padding:0px;
@@ -276,6 +284,8 @@ body, html{
   display: flex;
   flex-direction: row;
   padding:0px;
+  float:left;
+  margin:0px;
 }
 
 .popular-heading{
@@ -289,12 +299,13 @@ body, html{
 }
 
 .lefty{
-  flex-basis:10%;
+
   font-size:30px;
   background-color:rgb(5, 0, 0);
   font-family: 'Noto Sans TC', sans-serif;
-
+  text-align: left;
   padding:30px;
+  flex-basis:10%;
 }
 .righty{
   display: flex;
@@ -416,6 +427,7 @@ body, html{
   font-family: 'Poppins', sans-serif;
   font-size: 60px;
   color:#fff;
+  font-weight: bold;
   letter-spacing: 6px;
  
 }
@@ -488,8 +500,12 @@ section{
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(236, 233, 233);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
+}
+
+.large-right-tile a{
+  color:rgba(95, 48, 48, 0.925);
 }
 
 
@@ -497,14 +513,14 @@ section{
 .large-right-tile h1{
   font-size:50px;
   font-family:'Noto Sans TC', sans-serif;
-  background:rgba(95, 48, 48, 0.925);
+  background:rgb(236,233,233);
   padding:0px 16px 0px 16px;
 }
 
 .large-right-tile p{
   font-size:25x;
   font-family:'Noto Sans TC', sans-serif;
-  background:rgba(95, 48, 48, 0.925);
+  background:rgb(236,233,233);
 }
 
 .top-middle-tile{
@@ -515,7 +531,7 @@ section{
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(235, 228, 228);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
@@ -523,37 +539,41 @@ section{
 }
 
 .top-middle-tile h3{
-  background: rgba(95, 48, 48, 0.925);
+  background:rgb(245, 238, 238);
+  padding:10px 10px;
+  
 }
 .middle-tile h3{
-  background: rgba(95, 48, 48, 0.925);
+  background:rgb(245, 238, 238);
+  padding:10px 10px;
 }
 .bottom-middle-tile h3{
-  background: rgba(95, 48, 48, 0.925);
+  background:rgb(245, 238, 238);
+  padding:10px 10px;
 }
 .middle-tile{
-  background: url("/static/images/wine_guide_home.jpg");
+  background: url("/static/images/best_dough.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height:500px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(235, 228, 228);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
 
 }
 .bottom-middle-tile{
-  background: url("/static/images/guac_copy.jpg");
+  background: url("/static/images/wine_page/wine_cycle.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height:500px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(235, 228, 228);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
   font-size:30px;
   font-family:'Noto Sans TC', sans-serif;
@@ -568,7 +588,7 @@ section{
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgb(236, 233, 233);
+  color:rgba(95, 48, 48, 0.925);
   font-weight: bold;
   justify-content: center;
   font-size:30px;
@@ -578,8 +598,8 @@ section{
 
 .is-vertical a{
   list-style: none;
-  text-decoration: none;
-  color:white;
+ 
+  color:rgba(95, 48, 48, 0.925);
 }
 
 .dinner-tile{
@@ -589,7 +609,7 @@ section{
   background-size: 100%;
   display:flex;
   flex-direction: column;
-  color:rgb(236, 233, 233);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
   align-items: center;
   font-size:30px;
@@ -602,7 +622,7 @@ section{
   background-size: 100%;
   display:flex;
   flex-direction: column;
-  color:rgb(236, 233, 233);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
   align-items: center;
   font-size:30px;
@@ -615,7 +635,7 @@ section{
   background-size: 100%;
   display:flex;
   flex-direction: column;
-  color:rgb(245, 238, 238);
+  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
   align-items: center;
   font-size:30px;
@@ -625,16 +645,20 @@ section{
 }
 
 .snack-tile h3{
-  background:rgba(95, 48, 48, 0.925);
+  padding:10px 10px;
+  background:rgb(245, 238, 238);
 }
 .dinner-tile h3{
-  background:rgba(95, 48, 48, 0.925);
+  padding:10px 10px;
+  background:rgb(245, 238, 238);
 }
 .dessert-tile h3{
-  background:rgba(95, 48, 48, 0.925);
+  padding:10px 10px;
+  background:rgb(245, 238, 238);
 }
 .wine-tile h3{
-  background:rgba(95, 48, 48, 0.925);
+  padding:10px 10px;
+  background:rgb(245, 238, 238);
 }
 
 /* .top-middle-tile:hover{

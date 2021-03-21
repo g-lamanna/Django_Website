@@ -1,0 +1,115 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+.page-header{
+  margin:50px 200px;
+  padding:0px 120px;
+}
+
+.page-header h1{
+  font-family: 'Shippori Mincho', serif;
+  font-size:50px;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 4px;
+}
+
+.content{
+  margin:0px 200px;
+  padding:0px 120px;
+  text-align: left;
+}
+
+.content h1{
+  font-weight:bold;
+}
+
+.content p{
+  font-family: 'Shippori Mincho', serif;
+  font-size:20px;
+}
+
+.image-container{
+  margin:50px 0px;
+}
+
+@media screen and (max-width:1202px){
+  .page-header{
+    margin:50px 150px;
+    padding:0px 90px;
+  }
+  .page-header h1{
+    font-size:40px;
+  }
+  .content{
+    margin:0px 150px;
+    padding:0px 90px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:958px){
+  .page-header{
+    margin:50px 130px;
+    padding:0px 70px;
+  }
+  .page-header h1{
+    font-size:40px;
+  }
+  .content{
+    margin:0px 130px;
+    padding:0px 70px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:18px;
+  }
+}
+
+
+
+@media screen and (max-width:781px){
+  .page-header{
+    margin:50px 70px;
+    padding:0px 35px;
+  }
+  .page-header h1{
+    font-size:30px;
+  }
+  .content{
+    margin:0px 70px;
+    padding:0px 35px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:14px;
+  }
+}
+
+@media screen and (max-width:474px){
+  .page-header{
+    margin:50px 40px;
+    padding:0px 25px;
+  }
+  .page-header h1{
+    font-size:25px;
+  }
+  .content{
+    margin:0px 40px;
+    padding:0px 25px;
+    text-align: left;
+  }
+  .content p{
+    font-family: 'Shippori Mincho', serif;
+    font-size:12px;
+  }
+}

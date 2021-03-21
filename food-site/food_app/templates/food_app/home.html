@@ -23,12 +23,12 @@
   href="{% static 'css/home.css' %}">
 
   <div class='container jumbotron_background_img'> 
-      <img class='img-fluid bg-image' src="{% static 'images/lamanna_homemade_copy.jpg' %}">
+     
       <div class='container front-banner-text'>
         <h4 class='centered-logo'>
-            Homemade Gnocchi
+            <a href="{% url 'site-wine-guide' %}" >Gabriel's 2021 Wine Guide</a>
         </h4>
-        <h6>Learn how to make pasta like your grandmother</h6>
+       
       </div>
   </div>
 
@@ -42,7 +42,7 @@
 
       <div class='tile is-5 is-parent'>
         <div class='tile is-child box large-right-tile'>
-          <h1>Wine Generator</h1>
+          <h1><a href="{% url 'site-wine-generator' %}">Wine Generator</a></h1>
           <p>Let us suggest to you the right wine for the right occasion</p>
         </div>
       </div>
@@ -50,13 +50,13 @@
     <div class='tile is-7'>
       <div class='tile is-parent is-vertical'>
         <div class='tile is-child box top-middle-tile'>
-          <h3>How to make the best dough</h3>
+          <h3><a href="{% url 'site-best-dough' %}">Homemade Gnocci</a></h3>
         </div>
         <div class='tile is-child box middle-tile'>
-          <h3>2021 Wine Guide</h3>
+            <h3><a href="{% url 'site-best-dough' %}">Crafting the Perfect Dough</a></h3>
         </div>
         <div class='tile is-child box bottom-middle-tile'>
-          <h3>Classic Guac recipe</h3>
+          <h3><a href="{% url 'site-wine-make' %}">Crushing Homemade Wine</a></h3>
         </div>
     </div>
 
@@ -251,7 +251,7 @@
         01
       </div>
       <div class='container righty'>
-        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+        <a href="{% url 'site-wine-generator' %}"><h4>Random Wine Generator</h4></a>
       </div>
     </div>
     <div class='container popular-grid'>
@@ -259,7 +259,7 @@
         02
       </div>
       <div class='container righty'>
-        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+        <a href="{% url 'site-wine-guide' %}"><h4>2021 Wine Guide</h4></a>
       </div>
     </div>
     <div class='container popular-grid'>
@@ -267,7 +267,7 @@
         03
       </div>
       <div class='container righty'>
-        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+        <a href="{% url 'site-dessert' %}#nutella-french-toast-id"><h4>Recipe: Nutella and Peanut Butter French Toast</h4></a>
       </div>
     </div>
     <div class='container popular-grid'>
@@ -275,7 +275,7 @@
         04
       </div>
       <div class='container righty'>
-        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+        <a href="{% url 'site-dinner' %}#sweet-potato-id"><h4>Recipe: Pumpkin and Sweet Potato Gnocci</h4></a>
       </div>
     </div>
     <div class='container popular-grid'>
@@ -283,7 +283,7 @@
         05
       </div>
       <div class='container righty'>
-        <a href='#'><h4>What is The Right Kind of Wine For You? Check Out Our Personal Wine Generator</h4></a>
+        <a href="{% url 'site-wine-make' %}"><h4>How to Make Homemade Wine</h4></a>
       </div>
     </div>
     

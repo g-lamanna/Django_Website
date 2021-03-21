@@ -82,7 +82,7 @@ mapped_regions = [
 function initMap(){
 
   for(i = 0; i < mapped_regions.length; i++){
-          //The location of region
+  //The location of region
   let region = {lat:Object.values(mapped_regions[i])[1], lng:Object.values(mapped_regions[i])[2]};
   //The map, centered at the region, in this test case, Bordeaux, France.
   let map = new google.maps.Map(document.getElementById(Object.values(mapped_regions[i])[0]),{
