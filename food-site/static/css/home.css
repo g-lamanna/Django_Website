@@ -13,18 +13,35 @@ body, html{
   padding:0px;
 }
 
+.header-background{
+  background:linear-gradient(rgb(0,0,5) 80%, #fff 20%);
+  padding:30px 0px 0px 200px;
+  height:60%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  align-content: center;
+  margin: 0px 0px 50px 0px;
+
+ 
+
+}
+
 .jumbotron_background_img{
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding:0px 0px 0px 0px;
-  background: url("/static/images/wine_guide_home.jpg");
+  padding:0px 0px;
+  height:400px;
+  background: url("/static/images/wine_guide_home copy.jpg");
+  background-color:rgb(5, 0, 0);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   flex-wrap: row;
+
 
 }
 
@@ -33,34 +50,47 @@ body, html{
   text-align: center;
   flex-direction: column;
   align-content: center;
-  align-items: center;
-  color:rgba(95, 48, 48, 0.925);
-  letter-spacing: 12px;
-  font-size:41px;
+  align-items: flex-start;
+  justify-content: center;
+  color:rgba(207, 166, 241, 0.925);
+  letter-spacing: 2px;
+  font-size:33px;
   padding-top:5px;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-}
-
-.centered-logo a{
-  color:rgba(95, 48, 48, 0.925);
+  margin:0px 0px;
+  padding:0px 00px;
+  height:50%;
 }
 
 .front-banner-text{
-  position: absolute;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  color:#ffff;
-  letter-spacing: 12px;
-  padding:0px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  background-color: #fff;
-  width:70%;
+  height:100%;
+  display: block;
+  position: relative;
+  left: -200px;
+  top: 100px;
+  z-index: 99;
+
 }
+
+#jumbo-header{
+  color:rgb(0,0,5);
+  background:rgba(89, 255, 186, 0.925);
+  font-weight:bolder;
+  padding:0px 10px;
+  text-align: left;
+  font-size: 30px;
+}
+
+ .centered-logo a{
+  font-size:15px;
+  color:rgb(0,0,5);
+  background:rgba(89, 255, 186, 0.925);
+  font-weight:bolder;
+  padding:0px 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
 
 .h1-recipe-text{
   padding:0px;
@@ -74,7 +104,7 @@ body, html{
   max-width: 100%;
   padding-top:30px;
   background:rgb(192,192,192);
-  color:white;
+  color:rgb(0,0,5);
   padding-bottom:30px;
 }
 
@@ -293,7 +323,7 @@ body, html{
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  background-color: rgba(95, 48, 48, 0.925);
+  background-color: rgb(0,0,5);
   font-size:70px;
   
 }
@@ -377,18 +407,6 @@ body, html{
 }
 
 
-.featured{
-  display: flex;
-  justify-content: center;
-}
-
-.featured h6{
-  color:white;
-  font-size: 50px;
-  font-family: 'Poppins', sans-serif;
-  background-color:  rgba(95, 48, 48, 0.925);
-  letter-spacing: 5px;
-}
 
 
 
@@ -409,19 +427,7 @@ body, html{
   font-size: 40px;
 }
 
-.food-style-columns{
-  padding:70px 0px 70px 0px;
-  margin:50px 80px;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:row;
-  justify-content:center;
-  width:100%;
-  background: url("/static/images/kasumi.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
+
 
 .type-heading{
   font-family: 'Poppins', sans-serif;
@@ -441,10 +447,15 @@ body, html{
 .parent-banner-container{
   margin:0px;
   padding:0px;
-  display:flex;
-  justify-content: center;
+
   width: 100%;
 
+
+}
+
+.mid-section-big-board-image{
+  border-radius:10px;
+  
 }
 
 .mid-banner-container{
@@ -453,26 +464,34 @@ body, html{
   grid-template-rows: 1fr;
   margin:0px;
   padding:0px;
-  background-color:rgba(95, 48, 48, 0.925);
+  background:rgb(0,0,5);
   max-width: 100%;
-  margin:50px 0px 80px 0px;
+  margin:0px 0px 80px 0px;
 }
+
 
 .mid-banner-image{
   grid-column: 1/2;
   grid-row: 1/2;
-  padding:0px;
+
+  padding:0px 0px 0px 0px;
 }
 
 section{
-  background: rgb(247, 242, 242);
+  padding:0px 0px;
+  margin: 30px 0px;
   
+}
+
+.tile-container{
+  padding:0px 0px;
+  margin:70px 70px;
 }
 .mid-banner-text{
   grid-column: 2/4;
   grid-row: 1/2;
-  color:#fafafa;
-  padding:0px 0px 0px 30px;
+  color:rgb(0,0,5);
+  padding:0px 0px 0px 0px;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -481,87 +500,88 @@ section{
 
 .mid-banner-text h3{
   font-size:60px;
+  color:#fff;
 }
 
 .mid-banner-text p{
   font-size:20px;
+  color:#fff;
 }
 .mid-banner-text a{
-  color:white;
+  color:rgba(89, 255, 186, 0.925);
   text-decoration: underline;
 }
 
-.large-right-tile{
-  background: url("/static/images/wine-gen.JPG");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height:680px;
-
+.four-horizontal-tile{
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgba(95, 48, 48, 0.925);
   justify-content: center;
 }
 
-.large-right-tile a{
-  color:rgba(95, 48, 48, 0.925);
+.four-horizontal-tile a{
+  color:#fff;
 }
 
 
 
-.large-right-tile h1{
-  font-size:50px;
+.four-horizontal-tile h1{
+  font-size:40px;
   font-family:'Noto Sans TC', sans-serif;
-  background:rgb(236,233,233);
   padding:0px 16px 0px 16px;
+  border-radius:10px;
 }
 
-.large-right-tile p{
-  font-size:25x;
-  font-family:'Noto Sans TC', sans-serif;
-  background:rgb(236,233,233);
-}
+
 
 .top-middle-tile{
-  background: url("/static/images/pasta_tray.JPG");
+  background: url("/static/images/best_dough.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height:500px;
+  height:400px;
   display:flex;
   flex-direction: column;
   align-items: center;
   color:rgba(95, 48, 48, 0.925);
-  justify-content: center;
-  font-size:30px;
+  justify-content: flex-end;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
 
 }
 
 .top-middle-tile h3{
-  background:rgb(245, 238, 238);
+  background:#fff;
+  font-size:20px;
   padding:10px 10px;
-  
+  width:400px;
+  border-radius:10px;
 }
 .middle-tile h3{
-  background:rgb(245, 238, 238);
+  background:#fff;
   padding:10px 10px;
+  font-size:20px;
+  width:400px;
+  border-radius:10px;
 }
 .bottom-middle-tile h3{
-  background:rgb(245, 238, 238);
+  background:#fff;
+  font-size:20px;
   padding:10px 10px;
+  width:400px;
+  border-radius:10px;
 }
+
 .middle-tile{
-  background: url("/static/images/best_dough.jpg");
+  background: url("/static/images/vodka_sauce_tile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height:500px;
+  height:400px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgba(95, 48, 48, 0.925);
-  justify-content: center;
-  font-size:30px;
+  color:rgb(247, 242, 242);
+  justify-content: flex-end;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
 
 }
@@ -569,16 +589,96 @@ section{
   background: url("/static/images/wine_page/wine_cycle.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height:500px;
+  height:50px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgba(95, 48, 48, 0.925);
-  justify-content: center;
-  font-size:30px;
+  color:rgb(247, 242, 242);
+  justify-content: flex-end;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
+  margin:0px 0px;
 
 }
+
+.large-snack-tile{
+
+  background: url("/static/images/snack-tile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:480px;
+}
+
+.large-snack-tile:hover{}
+.large-dinner-tile:hover{}
+.large-dessert-tile:hover{}
+.large-wine-tile:hover{}
+
+.large-dinner-tile{
+
+  background: url("/static/images/dinner-tile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:480px;
+}
+.large-dessert-tile{
+
+  background: url("/static/images/dessert-tile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:480px;
+    ;}
+.large-wine-tile{
+
+  background: url("/static/images/wine_tile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:480px;
+}
+
+
+.wine-maker{
+  margin:90px 20px;
+  padding:0px;
+  display:flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.wine-diagram-image{
+
+  width:100%;
+}
+
+.wine-sectional-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin:0px 0px;
+  padding:0px;
+  max-width: 100%;
+  margin:0px 20px;
+  padding:0px 50px;
+  height:100%;
+}
+.wine-diagram{
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px 0px;
+
+}
+.wine-information{
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+  padding:0px 0px 0px 0px;
+}
+
+
 
 .snack-tile{
   background: url("/static/images/buff_dip.JPG");
@@ -588,18 +688,25 @@ section{
   display:flex;
   flex-direction: column;
   align-items: center;
-  color:rgba(95, 48, 48, 0.925);
+  color:rgb(247, 247, 247);
   font-weight: bold;
   justify-content: center;
-  font-size:30px;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
   
 }
-
-.is-vertical a{
+.tri-tile{
+  height:100%;
+}
+.tri-tile a{
   list-style: none;
- 
+  text-decoration: underline;
+  color:rgb(0,0,5);
+  
+}
+ .quad-tile a{
   color:rgba(95, 48, 48, 0.925);
+ 
 }
 
 .dinner-tile{
@@ -609,10 +716,10 @@ section{
   background-size: 100%;
   display:flex;
   flex-direction: column;
-  color:rgba(95, 48, 48, 0.925);
+  color:rgb(247, 247, 247);
   justify-content: center;
   align-items: center;
-  font-size:30px;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
   
 }
@@ -622,10 +729,10 @@ section{
   background-size: 100%;
   display:flex;
   flex-direction: column;
-  color:rgba(95, 48, 48, 0.925);
+  color:rgb(247, 247, 247);
   justify-content: center;
   align-items: center;
-  font-size:30px;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
   
 }
@@ -635,31 +742,353 @@ section{
   background-size: 100%;
   display:flex;
   flex-direction: column;
-  color:rgba(95, 48, 48, 0.925);
+  color:rgb(247, 247, 247);
   justify-content: center;
   align-items: center;
-  font-size:30px;
+  font-size:15px;
   font-family:'Noto Sans TC', sans-serif;
  
   
 }
+.hvr-grow {
+
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
 
 .snack-tile h3{
   padding:10px 10px;
-  background:rgb(245, 238, 238);
+  background:rgba(89, 255, 186, 0.925);
+  border-radius:10px;
+}
+.snack-tile a:hover{
+  list-style: none;
+  text-decoration: none;
+}
+.snack-tile h3:hover{
+  padding:10px 10px;
+  background:rgb(84, 224, 19); 
+  border-radius:10px;
+  color:#fff;
+  
 }
 .dinner-tile h3{
   padding:10px 10px;
-  background:rgb(245, 238, 238);
+  background:rgba(89, 255, 186, 0.925);
+  border-radius:10px;
+}
+.dinner-tile h3:hover{
+  padding:10px 10px;
+  background:rgb(19, 22, 170);
+  border-radius:10px;
+  color:#fff;
+  list-style: none;
+  text-decoration: none;
 }
 .dessert-tile h3{
   padding:10px 10px;
-  background:rgb(245, 238, 238);
+  background:rgba(89, 255, 186, 0.925);
+  border-radius:10px;
+}
+.dessert-tile h3:hover{
+  padding:10px 10px;
+  background:rgb(204,34,162);
+  border-radius:10px;
+  color:#fff;
+  list-style: none;
+  text-decoration: none;
 }
 .wine-tile h3{
   padding:10px 10px;
-  background:rgb(245, 238, 238);
+  background:rgba(89, 255, 186, 0.925);
+  border-radius:10px;
 }
+.wine-tile h3:hover{
+  background:rgba(89, 86, 241, 0.925);
+  color:#fff;
+}
+
+.wine-tile a:hover{
+  list-style: none;
+  text-decoration: none;
+}
+.dessert-tile a:hover{
+  list-style: none;
+  text-decoration: none;
+}
+
+.featured-section{
+  display:flex;
+  flex-direction: column;
+  padding:0px 0px 50px 0px;
+  margin:40px 0px;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.featured-section h2{
+  font-size:30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Shippori Mincho', serif;
+  color:rgb(0,0,5);
+  padding:0px 0px 0px 100px;
+}
+
+
+
+#featured-bar{
+  padding: 0px;
+  margin:0px 0px;
+  background:rgb(0,0,5);
+  width:60%;
+  border-radius: 30px;
+  height:3px;
+
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+  height:4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgb(0,0,5);
+
+}
+
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  width:90%;
+
+
+}
+
+.inner{
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+
+
+
+
+}
+
+.recipe-slider{
+  display:flex;
+  overflow-y:scroll;
+  padding: 0px 0px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa-chevron-circle-right{
+  font-size:15px;
+  color:rgba(89, 255, 186, 0.925);;
+}
+#left_button{
+color:rgb(0,0,5);
+font-size: 4em;
+border:none;
+margin: auto 0em auto 0em;
+
+}
+
+#right_button{
+  color:rgb(0,0,5);
+  margin: auto 0em auto 0em;
+  font-size: 4em;
+  border:none;
+}
+
+.card{
+  width:300px;
+  padding:0px 0px;
+  margin: 0px 10px;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h3{
+  padding:20px 0px;
+  font-family: 'Shippori Mincho', serif;
+}
+
+.image-card{
+  padding:0px 0px;
+  margin: 0px 0px;
+}
+
+#chicken_card{
+  background: url("/static/images/Chicken_Spinach_Alfredo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+
+}
+#pumpkin_gnocci_card{
+  background: url("/static/images/gnocci.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#frencho_soup_card{
+  background: url("/static/images/frencho.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#french_toast_card{
+  background: url("/media/image_posts/french_toast.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#kebab_card{
+  background: url("/static/images/kebab_copy_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#gnocci_card{
+  background: url("/static/images/gnocci_homemade.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:260px;
+}
+#vodka_sauce_card{
+  background: url("/static/images/vodka_sauce_tile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#buff_dip_card{
+  background: url("/static/images/buff_dip.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#stuffed_pepper_card{
+  background: url("/media/image_posts/stuffed_pepper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+#ribs_card{
+  background: url("/media/ribs.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height:250px;
+}
+
+
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.map{
+  margin:30px 0px;
+}
+
+button{
+  height:20px;
+  width:20px;
+  border-radius:50px;
+  cursor: pointer;
+  background:rgb(0,0,5);
+  margin:0px 20px;
+}
+
+.active{
+  background:rgba(89, 255, 186, 0.925);
+}
+  
+
+
+
+
+
 
 /* .top-middle-tile:hover{
   -webkit-filter: brightness(70%);
@@ -683,15 +1112,11 @@ section{
 
 
 @media screen and (max-width:1409px){
-  .jumbotron_background_img{
-    max-height: 60vh;
-  }
+
 }
 
 @media screen and (max-width:1216px){
-  .jumbotron_background_img{
-    max-height: 50vh;
-  }
+
 
   .large-right-tile{
     height:550px;
@@ -707,9 +1132,7 @@ section{
 }
 
 @media screen and (max-width:993px){
-  .jumbotron_background_img{
-    max-height: 42vh;
-  }
+
   .large-popular-image{
     height:500px;
     max-width:100%;
@@ -775,9 +1198,7 @@ section{
 }
 
 @media screen and (max-width:768px){
-  .jumbotron_background_img{
-    max-height: 30vh;
-  }
+
   .mid-banner-text h3{
     font-size:50px;
   }
@@ -947,5 +1368,208 @@ section{
     letter-spacing: 5px;
     background: url('static/images/kasumi.jpg');
   }
+}
 
+ .blog-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin:30px 200px;
+  width:75%;
+  padding:0px 0px;
+
+  border-radius:20px;
+}
+
+@media screen and (max-width:990px){
+  .large-snack-tile{
+    height:280px;
+  }
+  .large-dinner-tile{
+    height:280px;
+  }
+  .large-dessert-tile{
+    height:280px;
+  }
+  .large-wine-tile{
+    height:280px;
+  }
+}
+
+
+
+
+ .blog-photo{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin:0px 0px;
+  height:220px;
+  width:400px;
+  padding:0px 0px;
+  list-style:none;
+  
+}
+
+.blog-description{
+  grid-column: 2/7;
+  grid-row:1/2;
+  margin:0px 0px;
+  padding: 0px 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+ align-items: flex-start;
+ border:1px solid rgb(216, 207, 207);
+}
+
+.blog-description h1{
+  font-size:30px;
+  padding:0px 0px 15px 0px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+}
+
+.blog-description p{
+  font-size:15px;
+  padding:0px 0px 0px 0px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.blog-type{
+  margin:0px 0px;
+  padding:20px 0px 20px 0px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.blog-type h6{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+  color:#fff;
+  padding:10px 10px 10px 10px;
+
+}
+.blog-type a{
+  list-style: none;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 1172px){
+  /* .header-background{
+    padding: 30px 0px 0px 100px;
+  }*/
+  .jumbotron_background_img{
+    display:none;
+  } 
+  .front-banner-text{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+ 
+  }
+  .centered-logo{
+   left:300px;
+
+  }
+
+  #jumbo-desc{
+    display:none;
+  }
+  #jumbo-header{
+    font-size:80px;
+  }
+
+  .header-background{
+    background: url("/static/images/wine_guide_home copy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0px 0px 0px 400px;
+  }
+
+
+}
+
+
+
+@media screen and (max-width:925px){
+  .blog-container{
+    width:100%;
+    margin:30px 0px 30px 130px;
+  }
+  .blog-description{
+    width:100%;
+  }
+  .blog-photo{
+    width:400px;
+  }
+
+  .tile-container{
+    margin:0px 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 854px){
+  .blog-photo{
+    width:320px;
+  } 
+  .blog-type a{
+    font-size: 7px;
+  }
+
+  .blog-type h6{
+    padding: 5px 5px 5px 5px;
+  }
+
+  .blog-description h1{
+    font-size: 20px;
+  }
+  .blog-description p{
+    font-size: 12px;
+  }
+
+  .blog-container{
+    margin:30px 50px;
+  }
+
+
+}
+
+@media screen and (max-width: 620px){
+  .header-background{
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding:0px 0px 0px 400px;
+    height:40%;
+  }
+  #jumbo-header{
+    font-size:60px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .blog-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:70%;
+  }
+  .blog-description{
+    width:100%;
+    height:50%;
+  }
+  .blog-photo{
+    width:280px;
+  } 
 }

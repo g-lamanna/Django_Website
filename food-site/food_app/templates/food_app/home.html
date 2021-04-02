@@ -5,10 +5,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
@@ -19,17 +21,113 @@
   crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css"
   href="{% static 'css/imagehover.css' %}">
+ 
   <link rel="stylesheet" type="text/css"
   href="{% static 'css/home.css' %}">
-
-  <div class='container jumbotron_background_img'> 
-     
-      <div class='container front-banner-text'>
-        <h4 class='centered-logo'>
-            <a href="{% url 'site-wine-guide' %}" >Gabriel's 2021 Wine Guide</a>
-        </h4>
+  <div class='container-fluid header-background'>
+  <div class='container-fluid jumbotron_background_img'> 
+  </div>
        
+  <div class='container front-banner-text' style='display:flex; justify-content: center;'>
+      <h4 class='centered-logo'>
+          <a id='jumbo-header' href="{% url 'site-wine-guide' %}" style='margin-bottom:5px' > Exclusive: 2021 Wine Guide
+          </a>
+          <a id='jumbo-desc' href="{% url 'site-wine-guide' %}" style='text-decoration: none;'>
+            Enjoy your guide to red and white wines from Muscat of Alexandria to Cabernet Franc.</a>
+     
+    </div>
+</div>
+
+<div class='featured-section'>
+  <h2>Featured Recipes</h2>
+  <span id='featured-bar'></span>
+</div>
+
+
+
+<div class="recipe-slider">
+    <div class="wrapper">
+      <div class="inner">
+        <div class="container card">
+          <div class='image_card hvr-grow' id='chicken_card'></div>
+          <div class="content">
+            <h3>Alfredo Chicken and Spinach Tortellini</h3>
+            <a href="{% url 'site-dinner' %}#chicken_spinach"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+          </div>
+        </div>
+        <div class="container card">
+            <div class='image_card hvr-grow' id='frencho_soup_card'></div>
+            <div class="content">
+              <h3>Classic French Onion Soup</h3>
+              <a href="{% url 'site-dinner' %}#french-onion-id"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='french_toast_card'></div>
+            <div class="content">
+              <h3>Peanut Butter and Nutella French Toast</h3>
+              <a href="{% url 'site-dessert' %}#nutella-french-toast-id"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='pumpkin_gnocci_card'></div>
+            <div class="content">
+              <h3>Sweet Potato and Pumpkin Gnocchi</h3>
+              <a href="{% url 'site-dinner' %}#sweet-potato-id"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='kebab_card'></div>
+            <div class="content">
+              <h3>South Hawaiian Kebabs</h3>
+              <a href="{% url 'site-dinner' %}#carrib_kebab"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='gnocci_card'></div>
+            <div class="content">
+              <h3>Homemade Gnocci</h3>
+              <a href="{% url 'site-dinner' %}#carrib_kebab"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='vodka_sauce_card'></div>
+            <div class="content">
+              <h3>Cavatelli with Vodka Sauce and Mozzarella</h3>
+              <a href="{% url 'site-dinner' %}#carrib_kebab"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='buff_dip_card'></div>
+            <div class="content">
+              <h3>Buffalo Chicken Dip</h3>
+              <a href="{% url 'site-dinner' %}#carrib_kebab"><h5>See recipe <i class="fas fa-chevron-circle-right"></i></h5></a>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='stuffed_pepper_card'></div>
+            <div class="content">
+              <h3>Stuffed Peppers</h3>
+              <h5>See recipe <i class="fas fa-chevron-circle-right"></i> </h5>
+            </div>
+          </div>
+          <div class="container card">
+            <div class='image_card hvr-grow' id='ribs_card'></div>
+            <div class="content">
+              <h3>Sweet Carolina Ribs</h3>
+              <h5>See recipe <i class="fas fa-chevron-circle-right"></i> </h5>
+            </div>
+          </div>
+
       </div>
+    </div>
+    
+<div class='map'>
+  <button class='active first'></button>
+  <button class='second'></button>
+  <button class='third'></button>
+</div>
+
   </div>
 
 
@@ -37,197 +135,112 @@
  <br>
 
  <section>
-   <div class='container tile-container'>
+   <div class='tile-container'>
     <div class='tile is-ancestor'>
 
-      <div class='tile is-5 is-parent'>
-        <div class='tile is-child box large-right-tile'>
-          <h1><a href="{% url 'site-wine-generator' %}">Wine Generator</a></h1>
-          <p>Let us suggest to you the right wine for the right occasion</p>
+      <div class='tile is-3 is-parent'>
+        <div class='tile is-child box four-horizontal-tile large-snack-tile hvr-float-shadow'>
+          <h1><a class='hvr-grow' href="{% url 'site-wine-generator' %}">Snacks</a></h1>
+        </div>
+      </div>
+      <div class='tile is-3 is-parent'>
+        <div class='tile is-child box four-horizontal-tile large-dinner-tile hvr-float-shadow'>
+          <h1><a class='hvr-grow' href="{% url 'site-wine-generator' %}">Dinner</a></h1>
+        </div>
+      </div>
+      <div class='tile is-3 is-parent'>
+        <div class='tile is-child box four-horizontal-tile large-dessert-tile hvr-float-shadow'>
+          <h1><a class='hvr-grow' href="{% url 'site-wine-generator' %}">Sweets & Dessert</a></h1>
+        </div>
+      </div>
+      <div class='tile is-3 is-parent'>
+        <div class='tile is-child box four-horizontal-tile large-wine-tile hvr-float-shadow'>
+          <h1><a class='hvr-grow' href="{% url 'site-wine-generator' %}">Wine</a></h1>
         </div>
       </div>
 
-    <div class='tile is-7'>
-      <div class='tile is-parent is-vertical'>
-        <div class='tile is-child box top-middle-tile'>
-          <h3><a href="{% url 'site-best-dough' %}">Homemade Gnocci</a></h3>
-        </div>
-        <div class='tile is-child box middle-tile'>
-            <h3><a href="{% url 'site-best-dough' %}">Crafting the Perfect Dough</a></h3>
-        </div>
-        <div class='tile is-child box bottom-middle-tile'>
-          <h3><a href="{% url 'site-wine-make' %}">Crushing Homemade Wine</a></h3>
-        </div>
-    </div>
-
-    <div class='tile is-parent is-vertical'>
-       <div class='tile is-child box snack-tile'>
-          <a href="{% url 'site-snack' %}"><h3>Snacks</h3></a>
-      </div>
-        <div class='tile is-child box dinner-tile'>
-          <a href="{% url 'site-dinner' %}"><h3>Dinner</h3></a>
-      </div>
-      <div class='tile is-child box dessert-tile'>
-        <a href="{% url 'site-dessert' %}"><h3>Dessert</h3></a>
-      </div>
-      <div class='tile is-child box wine-tile'>
-        <a href="{% url 'site-wine' %}"><h3>Wine</h3></a>
-      </div>
-    </div>
-
-
-    </div> 
+ 
     </div>
    </div>
  </section>
 
-
-
-
-
-<div class='container food-style-columns'>
-  <div class='container left-column'>
-      <h1 class='type-heading'>#Editor's Picks</h1>
-  </div>
-</div>
-
-
-
- <div class='container article-grid'>
-   <div class='container grid-image-left imghvr-push-right'>
-     <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-     <figcaption>
-       <h3>Classic French Onion Soup</h3>
-        Delve into the french country side with this classic soup.
-        Delve into the french country side with this classic soup.
-    </figcaption>
-   </div>
-   <div class='container grid-image-center imghvr-push-right'>
-     <img class='img-fluid article-grid-image1' src="{% static 'images/Chicken_Spinach_Alfredo_copy.jpg' %}" href="#">
-     <a href="{% url 'site-dinner' %}#chicken"><figcaption>
-        <h3>Classic French Onion Soup</h3>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-     </figcaption></a>
-    </div>
-   <div class='container grid-image-right imghvr-push-right'>
-     <img class='img-fluid article-grid-image1' src="{% static 'images/pizza.jpg' %}" href="#">
-     <figcaption>
-        <h3>Classic French Onion Soup</h3>
-         Delve into the french country side with this classic soup.
-         Delve into the french country side with this classic soup.
-     </figcaption>
-   </div>
-
- </div>
-
- <div class='container article-grid'>
-    <div class='container grid-image-left imghvr-push-right'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/ribs_copy.jpg' %}" href="#">
-      <figcaption>
-          <h3>Classic French Onion Soup</h3>
-           Delve into the french country side with this classic soup.
-           Delve into the french country side with this classic soup.
-       </figcaption>
-    </div>
-
-    <div class='container grid-image-center imghvr-push-right'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/pulled_pork.jpg' %}" href="#">
-      <figcaption>
-          <h3>Classic French Onion Soup</h3>
-           Delve into the french country side with this classic soup.
-           Delve into the french country side with this classic soup.
-       </figcaption>
-    </div>
-
-    <div class='container grid-image-right imghvr-push-right'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/christmas_cookies.jpg' %}" href="#">
-      <figcaption>
-          <h3>Classic French Onion Soup</h3>
-           Delve into the french country side with this classic soup.
-           Delve into the french country side with this classic soup.
-       </figcaption>
-    </div>
-
+ <div class='featured-section' style='margin:50px 0px 0px 0px'>
+    <h2>What's New</h2>
+    <span id='featured-bar'></span>
   </div>
 
- <div class='container article-grid'>
-    <div class='container grid-image-left imghvr-push-right'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-      <figcaption>
-          <h3>Classic French Onion Soup</h3>
-           Delve into the french country side with this classic soup.
-           Delve into the french country side with this classic soup.
-       </figcaption>
-    </div>
-    <div class='container grid-image-center imghvr-push-right'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-      <figcaption>
-          <h3>Classic French Onion Soup</h3>
-           Delve into the french country side with this classic soup.
-           Delve into the french country side with this classic soup.
-       </figcaption>
-    </div>
+{% for post in posts %}
 
-    <div class='container grid-image-right imghvr-push-right'>
-      <img class='img-fluid article-grid-image1' src="{% static 'images/frencho.jpg' %}" href="#">
-      <figcaption>
-          <h3>Classic French Onion Soup</h3>
-           Delve into the french country side with this classic soup.
-           Delve into the french country side with this classic soup.
-       </figcaption>
-    </div>
+
+<section class='container blog-container'>
+    {% if post.article_type == 'Snack' %}
+    <a class='article_tag' href = " {% url 'site-snack' %}#{{post.article_link}}">
+    {% endif %}
+    {% if post.article_type == 'Dinner' %}
+    <a class='article_tag' href = " {% url 'site-dinner' %}#{{post.article_link}}">
+    {% endif %}
+    {% if post.article_type == 'Dessert' %}
+    <a class='article_tag' href = " {% url 'site-dessert' %}#{{post.article_link}}">
+    {% endif %}
+      {% if post.article_link == 'wine-gen' %}
+    <a class='article_tag' href = " {% url 'site-wine-generator' %}">
+      {% endif %}
+      {% if post.article_link == 'wine-guide' %}
+    <a class='article_tag' href = " {% url 'site-wine-guide' %}">
+      {% endif %}
+      {% if post.article_link == 'wine-make' %}
+    <a class='article_tag' href = " {% url 'site-wine-make' %}">
+      {% endif %}
+  <div class='container blog-photo' style="background: url('{{ post.image.url }}');background-repeat: no-repeat;
+  background-position: center; background-size: 100%;">
 
   </div>
+</a>
 
-  <div class='slider'>
 
+  <div class='container blog-description'>
+      <div class='blog-type'>
+        {% if post.article_type == 'Wine' %}
+          <a href="{% url 'site-wine' %}"><h6 style="background-color:rgb(149, 62, 248);">{{post.article_type}}</h6></a>
+        
+        {% endif %}
+        {% if post.article_type == 'Snack' %}
+          <a href="{% url 'site-snack' %}"><h6 style="background-color:rgb(84, 224, 19);">{{post.article_type}}</h6></a>
+        
+        {% endif %}
+        {% if post.article_type == 'Dinner' %}
+          <a href="{% url 'site-dinner' %}"><h6 style="background-color:rgb(221, 53, 53);">{{post.article_type}}</h6></a>
+        
+        {% endif %}
+        {% if post.article_type == 'Dessert' %}
+          <a href="{% url 'site-dessert' %}"><h6 style="background-color:rgb(204,34,162);">{{post.article_type}}</h6></a>
+        
+        {% endif %}
+        </div>
+    <h1 style="text-align: left">{{post.title}}</h1>
+    <p>{{post.description}}</p>
   </div>
+</section> 
 
-
-
-
-<!-- <div class='container featured'><h6>#Featured</h6></div>
- <div class='container info-boxes'data-aos="fade-right">
-    <div class='box image-1' >
-      <a href='#'>
-        <img class='img-fluid wine-image' src='{% static  "images/full-bottle.jpg"%}'>
-      </a>
-    </div>
-    <div class='box text-1'>
-      <h1>Perfect Wine Generator</h1>
-      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-        to pair it with!
-      </p>
-    </div>
-</div>
-<div class='container info-boxes' data-aos="fade-left">
-    <div class='box text-2'>
-      <h1>Perfect Wine Generator</h1>
-      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-        to pair it with!
-      </p>
+{% endfor %}
+<!-- 
+<section class='container-fluid wine-maker'>
+  <div class='container-fluid wine-sectional-grid'>
+    <div class='container wine-information'>
+      <div class='container'>
+        <h1>Why Buy Wine, When You Can Make It</h1>
       </div>
-    <div class='box image-3'>
-      <a href='#'>
-        <img class='img-fluid'  src='{% static  "images/stir-fry.jpg"%}'>
-      </a>
-    </div>
-</div>
-<div class='container info-boxes'data-aos="fade-right">
-    <div class='box image-3' >
-      <a href='#'>
-        <img class='img-fluid' src='{% static  "images/full-bottle.jpg"%}'>
-      </a>
-    </div>
-    <div class='box text-3'>
-      <h1>Perfect Wine Generator</h1>
-      <p>Input the kinds of food you are eating and let our generator tell you what a good wine woudl be
-        to pair it with!
-      </p>
-    </div>
-</div> -->
+      <div class='container'>
 
+      </div>
+
+    </div>
+    <div class='container wine-diagram'>
+      <img class='img-fluid wine-diagram-image' src="{% static 'images/winemakers.jpg' %}" href='#'>
+    </div>
+  </div>
+
+</section>
 
 <div class='container-fluid parent-banner-container'>
   <div class='container-fluid mid-banner-container'>
@@ -236,7 +249,7 @@
     </div>
     <div class='container mid-banner-text'>
       <h3>Caribbean Kebabs!</h3>
-      <p>A Caribbean-inspired marinade for these steak-veggie kebabs is flavored with soy sauce, plenty of spices 
+      <p>A Caribbean-inspired marinade for these steak-veggie kebabs is flavored with <br>soy sauce, plenty of spices 
         and and spiked with rum to get you hopping!</p>
       <a href='#'><small>check it out</small></a>
     </div>
@@ -292,7 +305,7 @@
   <div class='container right-grid'>
     <img class='img-fluid large-popular-image ' src="{% static 'images/burger.jpg' %}" href="#">
   </div>
-</div>
+</div> -->
 
 
 

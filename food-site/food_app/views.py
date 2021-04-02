@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from django.template.defaulttags import register
-from .models import Dinner_Post, Dessert_Post, Snack_Post, Wine_Post, Tips_Post, Wine_Generator
+from .models import Dinner_Post, Dessert_Post, Snack_Post, Wine_Post, Tips_Post, Wine_Generator, Wine_Guide
 
 
 def home(request):
-  return render(request,'food_app/home.html')
+  context = {
+  'posts': Wine_Post.objects.all(),
+  }
+  return render(request,'food_app/home.html', context)
 
 def dinner(request):
   context = {
@@ -42,10 +45,19 @@ def tips(request):
 #articles
 
 def wine_guide(request):
-  return render(request, 'food_app/wine_guide.html')
+  context = {
+    'posts': Wine_Guide.objects.all(),
+  }
+  return render(request, 'food_app/wine_guide.html', context)
 
 def wine_generator(request):
   return render(request, 'food_app/wine_generator.html')
 
 def wine_make(request):
   return render(request, 'food_app/wine_make.html')
+
+def wine_guide_base(request):
+  context = {
+  'posts': Wine_Guide.objects.all(),
+  }
+  return render(context)
