@@ -21,9 +21,10 @@
 
   {% for post in posts %}
 
-
+  <hr>
   <div class='container encasing-wine-grid'>
-      <div class='container title-text-grid'>
+      <div class='title-text-grid'>
+         
         {% if post.wine_type == 'Red' %}
           <span style="background-color:rgb(166,0,0);" data-aos="fade-right" data-aos-offset="300" 
           data-aos-easing="ease-in-sine" id='type-color' >Red</span>
@@ -40,7 +41,7 @@
 
           <div class='container artifacts'>
               <div class='container artifacts-grid'>            
-                  <h1>Where it Commonly Grows:</h1>
+                  <h1>Region of Grape Origin:</h1>
                   <span class='container' id='wine_location'><i class="fas fa-map-pin"></i>   {{post.wine_location}}<span>
               </div>     
           </div>
@@ -75,7 +76,7 @@
                   
               </div>
               <div class='rating'>
-                <div class="rating-level level-1  wow animate__animated animate__fadeInLeft" style='width:{{post.alcohol_lvl}}%;'></div>
+                <div class="rating-level level-1  wow animate__animated animate__fadeInLeft"style='width:{{post.alcohol_lvl}}%;'></div>
               </div>
             </div>
             <div class='rating-box'>
@@ -177,7 +178,6 @@
           </div>
       </div>
     </div>
-    <hr>
 
 {% endfor %}
 {% endblock guide_content %}

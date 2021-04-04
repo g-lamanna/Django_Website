@@ -14,15 +14,16 @@
   color:#fff;
   width:30%;
   padding:10px;
-  font-size: 29px;
+  font-size: 20px;
   border-radius: 30px;
+  letter-spacing: 5px;
 }
 
 #wine_location{
   background-color:black;
   color:#fff;
-  font-size: 23px;
-  width: 60%;
+  font-size: 18px;
+  width: 40%;
   border-radius: 20px;
 }
 
@@ -33,7 +34,7 @@
   text-align: center;
   margin:0px 0px 0px 0px;
   padding:50px 0px 100px 0px;
-  background:linear-gradient(to left, rgb(107, 13, 161), rgb(47, 228, 71));
+  background:rgb(0,0,5);
   width:100%;
   
 }
@@ -41,7 +42,7 @@
 .page-heading h1{
   font-size: 80px;
   font-family: 'Shippori Mincho', serif;
-  color:#ffff;
+  color:rgba(89, 255, 186, 0.925);
 }
 
 .wine-container{

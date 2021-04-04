@@ -184,6 +184,76 @@ mapped_regions = [
     'wine_id':'map-cort',
     'lat':45.103834,
     'long':7.876042
+  },
+  {
+    'wine_id':'map-dolce',
+    'lat':45.103834,
+    'long':7.876042
+  },
+  {
+    'wine_id':'map-fala',
+    'lat':40.832962,
+    'long':14.624462
+  },
+  {
+    'wine_id':'map-frap',
+    'lat':37.576113,
+    'long':14.061456
+  },
+  {
+    'wine_id':'map-furmint',
+    'lat':46.836469,
+    'long':18.701599
+  },
+  {
+    'wine_id':'map-gewu',
+    'lat':48.426197,
+    'long': 7.388526
+  },
+  {
+    'wine_id':'map-grenache',
+    'lat':45.711685,
+    'long':4.850225
+  },
+  {
+    'wine_id':'map-gren-blanc',
+    'lat':45.711685,
+    'long':4.850225
+  },
+  {
+    'wine_id':'map-gruner',
+    'lat':48.225174,
+    'long': 16.328554
+  },
+  {
+    'wine_id':'map-mad',
+    'lat':32.719339,
+    'long': -16.930852
+  },
+  {
+    'wine_id':'map-malbec',
+    'lat':-32.877996,
+    'long': -68.869506
+  },
+  {
+    'wine_id':'map-merlot',
+    'lat':44.849239,
+    'long':-0.586217
+  },
+  {
+    'wine_id':'map-mona',
+    'lat':38.611671, 
+    'long':-1.129368
+  },
+  {
+    'wine_id':'map-monte',
+    'lat':42.157056, 
+    'long': 13.414472
+  },
+  {
+    'wine_id':'map-alex',
+    'lat':39.457554,
+    'long': -0.431558
   }
 ]
 

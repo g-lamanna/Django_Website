@@ -151,15 +151,15 @@ class Wine_Guide(models.Model):
   acid_lvl = models.IntegerField(default='.')
   wine_id = models.CharField(max_length=30, default='.')
   aroma_1 = models.CharField(max_length=30, default='.')
-  image_1 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy')
+  image_1 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy_post')
   aroma_2 = models.CharField(max_length=30, default='.')
-  image_2 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy')  
+  image_2 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy_post')  
   aroma_3 = models.CharField(max_length=30, default='.')
-  image_3 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy')
+  image_3 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy_post')
   aroma_4 = models.CharField(max_length=30, default='.')
-  image_4 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy')
+  image_4 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy_post')
   aroma_5 = models.CharField(max_length=30, default='.')
-  image_5 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy') 
+  image_5 = models.ImageField(default='default.JPG', upload_to='image_posts/icons_copy_post') 
 
 
   def __str__(self):
