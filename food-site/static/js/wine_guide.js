@@ -254,7 +254,112 @@ mapped_regions = [
     'wine_id':'map-alex',
     'lat':39.457554,
     'long': -0.431558
-  }
+  },
+  {
+    'wine_id':'map-neb',
+    'lat':45.103834,
+    'long':7.876042
+  },
+  {
+    'wine_id':'map-Negro',
+    'lat':41.098215,
+    'long': 16.549492
+  },
+  {
+    'wine_id':'map-nero',
+    'lat':37.576113,
+    'long':14.061456
+  },
+  {
+    'wine_id':'map-nero',
+    'lat':37.576113,
+    'long':14.061456
+  },
+  {
+    'wine_id':'map-petvert',
+    'lat':39.932022,
+    'long': -1.690869
+  },
+  {
+    'wine_id':'map-petsirah',
+    'lat':38.314469,
+    'long': -122.301751
+  },
+  {
+    'wine_id':'map-pinoblanc',
+    'lat':48.681802,
+    'long': 9.222950
+  },
+  {
+    'wine_id':'map-pinogris',
+    'lat':45.561395,
+    'long': 11.976847
+  },
+  {
+    'wine_id':'map-pinonoir',
+    'lat':47.358254,
+    'long': 4.027561
+  },
+  {
+    'wine_id':'map-port',
+    'lat': 41.162122,
+    'long': -8.608566
+  },
+  {
+    'wine_id':'map-prosecco',
+    'lat':45.561395,
+    'long': 11.976847
+  },
+  {
+    'wine_id':'map-rhone',
+    'lat': 43.640795,
+    'long': 4.664700
+  },
+  {
+    'wine_id':'map-riesling',
+    'lat':50.169707,
+    'long': 8.045252
+  },
+  {
+    'wine_id':'map-sagra',
+    'lat':42.890891,
+    'long': 12.649009
+  },
+  {
+    'wine_id':'map-sangio',
+    'lat':43.377659,
+    'long': 10.918665
+  },
+  {
+    'wine_id':'map-savblanc',
+    'lat':47.143362,
+    'long': 2.550371
+  },
+  {
+    'wine_id':'map-syrah',
+    'lat':45.711685,
+    'long':4.850225
+  },
+  {
+    'wine_id':'map-touriga',
+    'lat':41.427596,
+    'long': -7.712398
+  },
+  {
+    'wine_id':'map-trebb',
+    'lat':45.696638,
+    'long': -0.338826
+  },
+  {
+    'wine_id':'map-verd',
+    'lat':41.411597,
+    'long': -4.959830
+  },
+  {
+    'wine_id':'map-zin',
+    'lat':38.291812,
+    'long':-122.398984
+  },
 ]
 
 
